@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/trends_dealbg"
+    android:padding="@dimen/layout_padding_normal" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/reserve_consumer"
+        android:textColor="@color/theme_color"
+        android:textSize="@dimen/module_title_textsize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="2dip"
+        android:background="@color/theme_gray_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/reserve_consumer_tv_name"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+
+        <TextView
+            android:id="@+id/reserve_consumer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@color/theme_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/reserve_consumer_tv_number"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+
+        <TextView
+            android:id="@+id/reserve_consumer_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@color/theme_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/reserve_consumer_tv_phoneback"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+
+        <EditText
+            android:id="@+id/reserve_consumer_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:inputType="phone"
+            android:background="@drawable/trends_editback"
+            android:hint="@string/reserve_consumer_hint_phoneback"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+    </LinearLayout>
+
+</LinearLayout>

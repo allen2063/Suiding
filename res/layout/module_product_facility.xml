@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/productfacility_facility"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/theme_gray_dark"
+    android:orientation="horizontal"
+    android:baselineAligned="true"
+    android:padding="@dimen/layout_padding_mini" >
+
+    <LinearLayout
+        android:id="@+id/productfacility_layoutfpeople"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="@string/productfacility_tv_fpeople"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_small" />
+
+        <TextView
+            android:id="@+id/productfacility_fpeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="@string/productfacility_fpeople"
+            android:textColor="@color/red"
+            android:textSize="@dimen/textsize_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/productfacility_layoutfpark"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="@string/productfacility_fpark"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_small" />
+
+        <TextView
+            android:id="@+id/productfacility_fpark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/vaule_bl_have"
+            android:textColor="@color/red"
+            android:textSize="@dimen/textsize_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/productfacility_layoutfwifi"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="@string/productfacility_fwifi"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_small" />
+
+        <TextView
+            android:id="@+id/productfacility_fwifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/vaule_bl_have"
+            android:textColor="@color/red"
+            android:textSize="@dimen/textsize_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/productfacility_layoutftoilet"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="@string/productfacility_ftoilet"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_small" />
+
+        <TextView
+            android:id="@+id/productfacility_ftoilet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/vaule_bl_have"
+            android:textColor="@color/red"
+            android:textSize="@dimen/textsize_small" />
+    </LinearLayout>
+
+</LinearLayout>

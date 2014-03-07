@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_dark"
+    android:orientation="vertical" >
+
+    <include layout="@layout/module_titlebar_other" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/theme_background_dark"
+        android:fadingEdge="none" >
+
+    	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/layout_padding_normal" android:background="@drawable/trends_dealbg" android:orientation="vertical">
+
+	       <RelativeLayout android:id="@+id/presearch_industry"  android:layout_width="match_parent" android:layout_height="@dimen/selectbar_height" android:background="@drawable/selector_background">
+	           <ImageView android:id="@+id/attention_imageView4" android:layout_width="@dimen/selectbar_imagesize" android:layout_height="@dimen/selectbar_imagesize" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" android:paddingBottom="5dip" android:paddingTop="5dip" android:src="@drawable/icon_city" />
+	           <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toRightOf="@+id/attention_imageView4" android:paddingBottom="10dip" android:paddingTop="10dip" android:text="@string/presearch_industry" android:textColor="#009bc8" android:textSize="@dimen/button_textsize" />
+	           <TextView android:id="@+id/presearch_industry_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toLeftOf="@+id/presearch_iamge3" android:paddingBottom="10dip" android:paddingTop="10dip" android:text="@string/presearch_industry" android:textColor="@color/theme_textcolor_text" android:textSize="@dimen/button_textsize" />
+	           <ImageView android:id="@+id/presearch_iamge3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="5dip" android:contentDescription="@string/app_name" android:paddingBottom="10dip" android:paddingTop="10dip" android:src="@drawable/icon_toright" />
+	       </RelativeLayout>
+	
+	       <include layout="@layout/module_divider_selectbar"/>
+	       
+	       <RelativeLayout android:id="@+id/presearch_industryex" android:layout_width="match_parent" android:layout_height="@dimen/selectbar_height" android:background="@drawable/selector_background">
+	           <ImageView android:id="@+id/attention_imageView5" android:layout_width="@dimen/selectbar_imagesize" android:layout_height="@dimen/selectbar_imagesize" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" android:paddingBottom="5dip" android:paddingTop="5dip" android:src="@drawable/icon_location" />
+	           <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toRightOf="@+id/attention_imageView5" android:paddingBottom="10dip" android:paddingTop="10dip" android:text="@string/presearch_industryex" android:textColor="#009bc8" android:textSize="@dimen/button_textsize" />
+	           <TextView android:id="@+id/presearch_industryex_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toLeftOf="@+id/presearch_iamge4" android:paddingBottom="10dip" android:paddingTop="10dip" android:text="@string/presearch_industryex" android:textColor="@color/theme_textcolor_text" android:textSize="@dimen/button_textsize" />
+	           <ImageView android:id="@+id/presearch_iamge4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="5dip" android:contentDescription="@string/app_name" android:paddingBottom="10dip" android:paddingTop="10dip" android:src="@drawable/icon_toright" />
+	       </RelativeLayout>
+	
+	       <include layout="@layout/module_divider_selectbar"/>
+	       
+	       <RelativeLayout android:id="@+id/presearch_enterkeywords" android:layout_width="match_parent" android:layout_height="@dimen/selectbar_height" android:background="@drawable/selector_background">
+	           <ImageView android:id="@+id/attention_imageView6" android:layout_width="@dimen/selectbar_imagesize" android:layout_height="@dimen/selectbar_imagesize" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" android:paddingBottom="5dip" android:paddingTop="5dip" android:src="@drawable/icon_keyword" />
+	           <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toRightOf="@+id/attention_imageView6" android:paddingBottom="10dip" android:paddingTop="10dip" android:text="@string/presearch_keyword" android:textColor="#009bc8" android:textSize="@dimen/button_textsize" />
+	           <EditText android:id="@+id/presearch_enterkeywords_result" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/attention_imageView6" android:layout_centerVertical="true" android:layout_marginRight="5dip" android:hint="@string/home_keyword_hint" android:inputType="text" android:padding="5dip" android:singleLine="true" android:textSize="@dimen/textsize_titlesmall" android:background="@color/theme_gray">
+	               <requestFocus />
+	           </EditText>
+	       </RelativeLayout>
+	   </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/presearch_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_margin="@dimen/layout_padding_normal"
+        android:background="@drawable/selector_button"
+        android:text="@string/home_tv_search"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+</LinearLayout>

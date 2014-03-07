@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dip"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_home_back" />
+
+    <com.suiding.widget.PullDownLinearLayout
+        android:id="@+id/home_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/home_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_padding_normal" >
+
+            <ImageView
+                android:id="@+id/home_suiding"
+                android:layout_width="80dip"
+                android:layout_height="40dip"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/layout_padding_large"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/image_home_suiding" />
+
+            <LinearLayout
+                android:id="@+id/home_searchbar_ex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/home_suiding"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/home_tv_cityname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/theme_color_dark"
+                    android:padding="10dip"
+                    android:singleLine="true"
+                    android:text="@string/home_tv_cityname"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/home_bt_keyword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/icon_search"
+                    android:gravity="center_vertical"
+                    android:hint="@string/home_keyword_hint"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/home_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_below="@id/home_searchbar_ex"
+                android:background="#66333333" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_below="@id/home_shadow"
+                android:background="#33333333" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/home_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0"
+            android:background="@android:color/white"
+            android:fadingEdge="none"
+            android:scrollbarThumbVertical="@drawable/shape_scrollbar" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/layout_padding_mini" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dip"
+                    android:background="@color/theme_orange" >
+
+                    <RelativeLayout
+                        android:id="@+id/home_item_repast"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_background" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|center_vertical"
+                            android:paddingLeft="160dip"
+                            android:paddingRight="10dip"
+                            android:text="@string/home_item_detail_repast"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textsize_titlesmall" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_vertical"
+                            android:padding="5dip"
+                            android:text="@string/home_item_detail_toright"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textsize_titlesmall" />
+
+                        <ImageView
+                            android:layout_width="160dip"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/image_business_repast" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/theme_orange"
+                            android:paddingLeft="2dip"
+                            android:paddingRight="2dip"
+                            android:text="@string/home_item_repast"
+                            android:textColor="@android:color/white" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dip"
+                    android:layout_marginTop="@dimen/layout_padding_mini"
+                    android:background="@color/theme_cyan" >
+
+                    <RelativeLayout
+                        android:id="@+id/home_item_hotel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_background" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|center_vertical"
+                            android:paddingLeft="160dip"
+                            android:paddingRight="10dip"
+                            android:text="@string/home_item_detail_hotel"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textsize_titlesmall" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_vertical"
+                            android:padding="5dip"
+                            android:text="@string/home_item_detail_toright"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textsize_titlesmall" />
+
+                        <ImageView
+                            android:layout_width="160dip"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/image_business_hotel" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/theme_cyan"
+                            android:paddingLeft="2dip"
+                            android:paddingRight="2dip"
+                            android:text="@string/home_item_hotel"
+                            android:textColor="@android:color/white" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dip"
+                    android:layout_marginTop="@dimen/layout_padding_mini"
+                    android:background="@color/theme_green" >
+
+                    <RelativeLayout
+                        android:id="@+id/home_item_live"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_background" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|center_vertical"
+                            android:paddingLeft="160dip"
+                            android:paddingRight="10dip"
+                            android:text="@string/home_item_detail_live"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textsize_titlesmall" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_vertical"
+                            android:padding="5dip"
+                            android:text="@string/home_item_detail_toright"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textsize_titlesmall" />
+
+                        <ImageView
+                            android:layout_width="160dip"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/image_business_live" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/theme_green"
+                            android:paddingLeft="2dip"
+                            android:paddingRight="2dip"
+                            android:text="@string/home_item_live"
+                            android:textColor="@android:color/white" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dip"
+                    android:layout_marginTop="@dimen/layout_padding_mini"
+                    android:background="@color/theme_red" >
+
+                    <RelativeLayout
+                        android:id="@+id/home_item_recreate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_background" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|center_vertical"
+                            android:paddingLeft="160dip"
+                            android:paddingRight="10dip"
+                            android:text="@string/home_item_detail_recreate"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textsize_titlesmall" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_vertical"
+                            android:padding="5dip"
+                            android:text="@string/home_item_detail_toright"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textsize_titlesmall" />
+
+                        <ImageView
+                            android:layout_width="160dip"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/image_business_recreate" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/theme_red"
+                            android:paddingLeft="2dip"
+                            android:paddingRight="2dip"
+                            android:text="@string/home_item_recreate"
+                            android:textColor="@android:color/white" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dip"
+                    android:layout_marginTop="@dimen/layout_padding_mini"
+                    android:background="@color/theme_purple" >
+
+                    <RelativeLayout
+                        android:id="@+id/home_item_belle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_background" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|center_vertical"
+                            android:paddingLeft="160dip"
+                            android:paddingRight="10dip"
+                            android:text="@string/home_item_detail_belle"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textsize_titlesmall" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_vertical"
+                            android:padding="5dip"
+                            android:text="@string/home_item_detail_toright"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textsize_titlesmall" />
+
+                        <ImageView
+                            android:layout_width="160dip"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/image_business_belle" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/theme_purple"
+                            android:paddingLeft="2dip"
+                            android:paddingRight="2dip"
+                            android:text="@string/home_item_belle"
+                            android:textColor="@android:color/white" />
+                    </RelativeLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.suiding.widget.PullDownLinearLayout>
+
+    <FrameLayout
+        android:id="@+id/home_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AA000000"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="80dip"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/home_searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/home_tv_cityname_ex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/theme_color_dark"
+                android:padding="10dip"
+                android:singleLine="true"
+                android:text="@string/home_tv_cityname"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/home_et_keyword"
+                android:layout_width="0dip"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_search"
+                android:hint="@string/home_keyword_hint"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/home_tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/theme_color_dark"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="10dip"
+                android:singleLine="true"
+                android:text="@string/home_tv_search"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

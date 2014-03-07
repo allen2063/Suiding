@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_dark"
+    android:orientation="vertical" >
+
+    <include layout="@layout/module_titlebar_other" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/frame_selectbar"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/shared_toqq"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/selectbar_height"
+            android:background="@drawable/selector_background" >
+
+            <ImageView
+                android:id="@+id/attention_imageView2"
+                android:layout_width="@dimen/selectbar_imagesize"
+                android:layout_height="@dimen/selectbar_imagesize"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_person" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@+id/attention_imageView2"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="发送给好友"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="@dimen/selectbar_textsize" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/theme_gray_dark" />
+
+        <RelativeLayout
+            android:id="@+id/shared_toweibo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/selectbar_height"
+            android:background="@drawable/selector_background" >
+
+            <ImageView
+                android:id="@+id/attention_imageView1"
+                android:layout_width="@dimen/selectbar_imagesize"
+                android:layout_height="@dimen/selectbar_imagesize"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_person" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@+id/attention_imageView1"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="微博分享"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="@dimen/selectbar_textsize" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/theme_gray_dark" />
+
+        <RelativeLayout
+            android:id="@+id/shared_toweixin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/selectbar_height"
+            android:background="@drawable/selector_background" >
+
+            <ImageView
+                android:id="@+id/attention_imageView3"
+                android:layout_width="@dimen/selectbar_imagesize"
+                android:layout_height="@dimen/selectbar_imagesize"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_person" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@+id/attention_imageView3"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="发送到朋友圈"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="@dimen/selectbar_textsize" />
+        </RelativeLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/theme_gray_dark" />
+
+        <RelativeLayout
+            android:id="@+id/shared_onekey"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/selectbar_height"
+            android:background="@drawable/selector_background" >
+
+            <ImageView
+                android:id="@+id/attention_imageView3"
+                android:layout_width="@dimen/selectbar_imagesize"
+                android:layout_height="@dimen/selectbar_imagesize"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_person" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@+id/attention_imageView3"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="其他"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="@dimen/selectbar_textsize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

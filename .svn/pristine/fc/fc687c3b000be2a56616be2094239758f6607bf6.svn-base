@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_background_white"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:padding="@dimen/layout_padding_normal" >
+
+    <!--  -->
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <QuickContactBadge
+            android:id="@+id/listitem_birthremind_headimg"
+            android:layout_width="50dip"
+            android:layout_height="50dip"/>
+
+        <TextView
+            android:id="@+id/listitem_birthremind_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:text="@string/listitem_birthremind_name"
+            android:textColor="@color/gray_dark"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/listitem_birthremind_iconsex"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_man" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/listitem_birthremind_remainday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/listitem_birthremind_remainday"
+        android:textColor="@color/red"
+        android:textSize="25sp" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="@string/listitem_birthremind_day"
+        android:textColor="@color/gray_dark"
+        android:textSize="15sp" />
+
+</LinearLayout>

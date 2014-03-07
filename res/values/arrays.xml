@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="city_name">
+        <item >请选择</item>
+        <item >上海</item>
+        <item >南京</item>
+        <item >昆明</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background"
+    android:orientation="vertical"
+    tools:context=".FixedCityActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:background="@color/theme_titlebar_background" >
+
+        <ImageView
+            android:id="@+id/fixedpostion_bt_back"
+            android:layout_width="80dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_button_back"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_goback" />
+
+        <TextView
+            android:id="@+id/fixedpostion_tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:text="@string/fixedpostion_curcity"
+            android:textColor="@color/theme_textcolor_title"
+            android:textSize="@dimen/titlebar_textsize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_gray"
+        android:padding="5dip" >
+
+        <EditText
+            android:id="@+id/fixedposition_entercityname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/frame_edittext"
+            android:drawableLeft="@drawable/icon_search"
+            android:hint="@string/fixedposition_edit_hint"
+            android:padding="5dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include layout="@layout/module_progress" />
+
+        <ListView
+            android:id="@+id/listInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@color/theme_background"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+			android:dividerHeight = "0dip"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:scrollbars="none" >
+        </ListView>
+        <!--              android:divider="@color/theme_gray_dark"
+            android:dividerHeight="@dimen/listview_dividerheight"-->
+
+        <com.suiding.widget.SpellLetterView
+            android:id="@+id/rightCharacterListView"
+            android:layout_width="20dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="#66ffffff" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/trends_dealbg"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_padding_mini" >
+
+    <TextView
+        android:id="@+id/module_merchant_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:drawableLeft="@drawable/ic_people"
+        android:drawablePadding="5dip"
+        android:text="@string/module_merchant_tv_title"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/textsize_titlesmall" />
+
+    <include
+        android:layout_height="1.0px"
+        layout="@layout/module_divider_list" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/layout_padding_mini" >
+
+            <ProgressBar
+                android:id="@+id/module_merchant_progress"
+                android:layout_width="20dip"
+                android:layout_height="20dip" />
+
+            <TextView
+                android:id="@+id/module_merchant_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/layout_padding_mini"
+                android:text="@string/module_product_refreshing"
+                android:textColor="#ff2b8dab"
+                android:textSize="@dimen/textsize_content" />
+        </LinearLayout>
+
+        <RelativeLayout
+	        android:id="@+id/module_merchant_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:visibility="gone"
+            android:padding="@dimen/layout_padding_mini" >
+	
+	        <ImageView
+	            android:id="@+id/module_merchant_phoneimg"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:padding="5dip"
+	            android:background="@drawable/selector_background"
+	            android:contentDescription="@string/app_name"
+	            android:src="@drawable/selector_phone" />
+
+	        <View
+	            android:id="@+id/module_merchant_phoneline"
+	            android:layout_width="1dip"
+	            android:layout_height="40dip"
+	            android:layout_centerVertical="true"
+	            android:layout_toLeftOf="@+id/module_merchant_phoneimg"
+	            android:layout_margin="5dip"
+	            android:background="@color/theme_gray_dark" />
+        
+            <TextView
+                android:id="@+id/module_merchant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+	            android:layout_toLeftOf="@+id/module_merchant_phoneline"
+                android:singleLine="true"
+                android:text="@string/module_merchant_tv_name"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="@dimen/textsize_content" />
+
+            <TextView
+                android:id="@+id/module_merchant_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/module_merchant_name"
+                android:layout_alignParentLeft="true"
+	            android:layout_toLeftOf="@+id/module_merchant_phoneline"
+                android:singleLine="true"
+                android:text="@string/module_merchant_tv_company"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="@dimen/textsize_content" />
+
+            <TextView
+                android:id="@+id/module_merchant_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/module_merchant_company"
+                android:layout_alignParentLeft="true"
+	            android:layout_toLeftOf="@+id/module_merchant_phoneline"
+                android:singleLine="true"
+                android:text="@string/module_merchant_tv_phone"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="@dimen/textsize_content" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

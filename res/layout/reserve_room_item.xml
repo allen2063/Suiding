@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:orientation="horizontal"
+        android:padding="@dimen/module_padding" >
+
+        <TextView
+            android:id="@+id/reserve_info_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/layout_padding_mini"
+            android:paddingRight="@dimen/layout_padding_normal"
+            android:singleLine="true"
+            android:text="@string/reserve_info_item_tv"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+
+        <EditText
+            android:id="@+id/reserve_info_item_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:paddingRight="@dimen/layout_padding_normal"
+            android:singleLine="true"
+            android:hint="@string/reserve_info_item_hint"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="@color/theme_gray_dark"
+        android:visibility="gone" />
+
+</LinearLayout>

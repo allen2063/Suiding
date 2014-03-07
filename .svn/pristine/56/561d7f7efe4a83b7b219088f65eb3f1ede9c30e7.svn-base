@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="default_checkbox">
+        <item name="android:button">@drawable/selector_checkbox</item>
+    </style>
+    <style name="default_listview">
+        <item name="android:background">#ffffffff</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">@drawable/line</item>
+        <item name="android:dividerHeight">1.0px</item>
+        <item name="android:footerDividersEnabled">true</item>
+    </style>
+    <style name="merchant_listview">
+        <item name="android:background">#ffffffff</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">#ffcccccc</item>
+        <item name="android:dividerHeight">1.0px</item>
+    </style>
+    <style name="input_error">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">#ffcc3333</item>
+    </style>
+    <style name="default_notice">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="topbar">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="title">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="default_shadow">
+        <item name="android:shadowColor">#ff333333</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+    <style name="default_text_shadow" parent="@style/default_shadow">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="gray_text_shadow" parent="@style/default_text_shadow">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff686868</item>
+        <item name="android:shadowColor">#ffe2e2e2</item>
+    </style>
+    <style name="black_text_shadow" parent="@style/default_text_shadow">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:shadowColor">#ffa6a6a6</item>
+    </style>
+    <style name="button_style" parent="android:Widget.TextView">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/selector_button</item>
+        <item name="android:paddingTop">@dimen/button_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/button_padding_vertical</item>
+        <item name="android:paddingLeft">@dimen/button_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/button_padding_horizontal</item>
+        <item name="android:textColor">@color/theme_textcolor_button</item>
+        <item name="android:textSize">@dimen/button_textsize</item>
+    </style>
+    <style name="button_white_style" parent="android:Widget.TextView">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/selector_button_white</item>
+        <item name="android:paddingTop">@dimen/button_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/button_padding_vertical</item>
+        <item name="android:paddingLeft">@dimen/button_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/button_padding_horizontal</item>
+        <item name="android:textColor">@color/theme_textcolor_text</item>
+        <item name="android:textSize">@dimen/button_textsize</item>
+    </style>
+</resources>

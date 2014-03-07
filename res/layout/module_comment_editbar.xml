@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/trends_dealbg_top"
+    android:paddingTop="10dip" 
+    android:paddingBottom="10dip" >
+
+    <RatingBar
+        android:id="@+id/detail_comment_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="18dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="5dip"
+        android:numStars="5"
+        android:rating="4"
+        android:progressDrawable="@drawable/selector_rating" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@+id/detail_comment_grade"
+        android:background="@drawable/line"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/detail_comment_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/detail_comment_grade"
+        android:layout_marginTop="5dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/selector_button"
+        android:paddingBottom="10dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="10dip"
+        android:text="@string/detail_comment_submit"
+        android:textColor="@color/theme_textcolor_button"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/detail_comment_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/detail_comment_grade"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_toLeftOf="@+id/detail_comment_submit"
+        android:background="@drawable/trends_editback"
+        android:hint="@string/detail_comment_input"
+        android:inputType="text"
+        android:padding="10dip"
+        android:textSize="14sp" />
+
+</RelativeLayout>

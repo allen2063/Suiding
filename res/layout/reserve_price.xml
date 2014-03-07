@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+        android:background="@color/theme_gray_dark"
+    android:padding="@dimen/layout_padding_normal" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/reserve_price"
+        android:textColor="@color/theme_color_dark"
+        android:textSize="@dimen/module_title_textsize"
+        android:visibility="gone"   />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_marginTop="2dip"
+        android:layout_marginBottom="10dip"
+        android:background="@color/theme_gray_dark"
+        android:visibility="gone"  />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"  >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="5dip"
+        	android:singleLine="true"
+            android:text="@string/reserve_price_tv_total"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+
+        <TextView
+            android:id="@+id/reserve_price_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dip"
+        	android:singleLine="true"
+            android:text="@string/reserve_price_total"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@color/theme_gray"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+        	android:singleLine="true"
+            android:text="总    价"
+            android:textColor="@color/theme_color_dark"
+        	android:textSize="@dimen/module_title_textsize" />
+
+        <TextView
+            android:id="@+id/reserve_price_privilege"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dip"
+        	android:singleLine="true"
+            android:text="@string/reserve_price_privilege"
+            android:textColor="@color/red"
+            android:textSize="@dimen/textsize_titlesmall" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/trends_dealbg"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_padding_normal" >
+
+    <TextView
+        android:id="@+id/ordermodule_selected_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/ordermodule_selected_title"
+        android:textColor="@color/theme_color_dark"
+        android:textSize="@dimen/module_title_textsize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="2dip"
+        android:background="@color/theme_gray_dark"
+        android:visibility="gone" />
+
+    <LinearLayout 
+        android:id="@+id/ordermodule_selected_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+        
+	    <include layout="@layout/reserve_menu_item" />
+	
+	    <include layout="@layout/reserve_menu_item" />
+    </LinearLayout>
+
+    <include layout="@layout/module_divider_selectbar"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dip"
+        android:padding="@dimen/layout_padding_mini"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="0dip"
+        	android:singleLine="true"
+            android:text="@string/ordermodule_selected_summation"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+        	android:singleLine="true"
+            android:minWidth="30dip"
+            android:text="@string/ordermodule_selected_num"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+        
+        <TextView
+            android:id="@+id/ordermodule_selected_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+        	android:singleLine="true"
+            android:minWidth="30dip"
+            android:gravity="center"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+        	android:singleLine="true"
+            android:minWidth="30dip"
+            android:text="@string/ordermodule_selected_price"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+        
+        <TextView
+            android:id="@+id/ordermodule_selected_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="25dip"
+            android:minWidth="55dip"
+        	android:singleLine="true"
+        	android:gravity="center"
+            android:text="@string/reserve_price_total"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+    </LinearLayout>
+</LinearLayout>

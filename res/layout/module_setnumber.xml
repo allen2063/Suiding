@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/reserve_item_name"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:singleLine="true"
+        android:text="@string/reserve_item_name"
+        android:textColor="@color/theme_textcolor_text"
+        android:textSize="@dimen/textsize_content" />
+
+    <FrameLayout
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:background="#FFCC0F" >
+
+        <TextView
+            android:id="@+id/reserve_item_bt_munus"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:background="@drawable/selector_disable_gray"
+            android:gravity="center"
+            android:text="@string/button_minus"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/reserve_item_et_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minWidth="30dip"
+        android:textColor="@color/theme_color_dark"
+        android:textSize="@dimen/textsize_content" />
+
+    <FrameLayout
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:background="#FFBB11" >
+
+        <TextView
+            android:id="@+id/reserve_item_bt_plus"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:background="@drawable/selector_disable_gray"
+            android:gravity="center"
+            android:text="@string/button_plus"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+</LinearLayout>

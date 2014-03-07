@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/layout_padding_mini" 
+    android:background="@drawable/selector_background_white">
+
+    <QuickContactBadge
+        android:id="@+id/listitem_order_headimg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"/>
+    
+    <TextView
+        android:id="@+id/listitem_order_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/layout_padding_mini"
+        android:layout_toRightOf="@+id/listitem_order_headimg"
+        android:text="@string/listitem_order_name"
+        android:textSize="@dimen/textsize_titlesmall"
+        android:textColor="@color/theme_textcolor_text" />
+
+    <ImageView
+        android:id="@+id/listitem_order_icon_toright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_toright" />
+
+    <TextView
+        android:id="@+id/listitem_order_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:padding="2dip"
+        android:background="@drawable/selector_background_status"
+        android:text="@string/listitem_order_cancel"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/listitem_order_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/textsize_small"
+        android:text="@string/listitem_order_time" />
+
+    <TextView
+        android:id="@+id/listitem_order_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/listitem_order_headimg"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="3dip"
+        android:textColor="@color/gray"
+        android:textSize="15sp"
+        android:text="@string/listitem_order_unit" />
+
+    <TextView
+        android:id="@+id/listitem_order_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_padding_mini"
+        android:layout_toRightOf="@+id/listitem_order_headimg"
+        android:layout_below="@+id/listitem_order_name"
+        android:text="@string/listitem_order_product"
+        android:textSize="@dimen/textsize_content"
+        android:textColor="@color/theme_red" />
+
+    <TextView
+        android:id="@+id/listitem_order_coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/listitem_order_product"
+        android:layout_toLeftOf="@+id/listitem_order_cancel"
+        android:layout_below="@+id/listitem_order_name"
+        android:text="@string/listitem_order_coupon"
+        android:textSize="@dimen/textsize_content"
+        android:layout_marginLeft="3dp"
+        android:singleLine="true"
+        android:textColor="@color/theme_red" />
+
+    <TextView
+        android:id="@+id/listitem_order_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_padding_mini"
+        android:layout_toRightOf="@+id/listitem_order_headimg"
+        android:layout_toLeftOf="@+id/listitem_order_nowprice"
+        android:layout_below="@+id/listitem_order_coupon"
+        android:maxLines="2"
+        android:text="@string/listitem_order_coupon"
+        android:textSize="@dimen/textsize_content"
+        android:textColor="@color/theme_textcolor_gray" />
+    
+    <TextView
+        android:id="@+id/listitem_order_nowprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/listitem_order_headimg"
+        android:layout_toLeftOf="@+id/listitem_order_unit"
+        android:textColor="@color/theme_color"
+        android:textSize="23sp"
+        android:text="@string/listitem_order_price" />
+
+    <TextView
+        android:id="@+id/listitem_order_oldprivate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/listitem_order_headimg"
+        android:layout_toLeftOf="@+id/listitem_order_nowprice"
+        android:paddingBottom="3dip"
+        android:textColor="#565656"
+        android:layout_marginRight="2dp"
+        android:textSize="12sp"
+        android:text="@string/listitem_order_discounted_format"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/orderinfo_resturant_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_padding_mini"
+        android:singleLine="true"
+        android:text="@string/orderinfo_resturant_title"
+        android:textColor="@color/theme_color_dark"
+        android:textSize="@dimen/textsize_titlesmall" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:orientation="horizontal"
+        android:padding="@dimen/module_padding" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/layout_padding_mini"
+            android:paddingRight="@dimen/layout_padding_normal"
+            android:singleLine="true"
+            android:text="@string/orderinfo_resturant_arrival"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+
+        <TextView
+            android:id="@+id/orderinfo_resturant_arrival"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:paddingRight="@dimen/layout_padding_normal"
+            android:singleLine="true"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:orientation="horizontal"
+        android:padding="@dimen/module_padding" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/layout_padding_mini"
+            android:paddingRight="@dimen/layout_padding_normal"
+            android:singleLine="true"
+            android:text="@string/orderinfo_resturant_peoples"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+
+        <TextView
+            android:id="@+id/orderinfo_resturant_peoples"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:paddingRight="@dimen/layout_padding_normal"
+            android:singleLine="true"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:orientation="horizontal"
+        android:padding="@dimen/module_padding" >
+
+        <TextView
+            android:id="@+id/orderinfo_store_tv_telephone"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/layout_padding_mini"
+            android:paddingRight="@dimen/layout_padding_normal"
+            android:singleLine="true"
+            android:text="@string/orderinfo_resturant_product"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+
+        <TextView
+            android:id="@+id/orderinfo_resturant_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:paddingRight="@dimen/layout_padding_normal"
+            android:singleLine="true"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:orientation="horizontal"
+        android:padding="@dimen/module_padding" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/layout_padding_mini"
+            android:paddingRight="@dimen/layout_padding_normal"
+            android:singleLine="true"
+            android:text="@string/orderinfo_resturant_menu"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+
+        <TextView
+            android:id="@+id/orderinfo_resturant_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:paddingRight="@dimen/layout_padding_normal"
+            android:singleLine="true"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+    </LinearLayout>
+
+</LinearLayout>

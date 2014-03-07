@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_dark"
+    android:orientation="vertical" >
+
+    <include layout="@layout/module_titlebar_other" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/layout_nav"
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20.0dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/suiding_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/about_app_name"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="27sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/about_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/about_version"
+                android:textColor="@color/red"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/frame_selectbar"
+                android:orientation="vertical"
+                android:padding="1dip" >
+
+                <TextView
+                    android:id="@+id/about_useragreement"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_background"
+                    android:drawableRight="@drawable/icon_toright"
+                    android:padding="10dip"
+                    android:text="@string/about_useragreement"
+                    android:textColor="@color/theme_textcolor_text"
+                    android:textSize="@dimen/selectbar_textsize" />
+
+                <include layout="@layout/module_divider_selectbar" />
+
+                <TextView
+                    android:id="@+id/about_userhelp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_background"
+                    android:drawableRight="@drawable/icon_toright"
+                    android:padding="10dip"
+                    android:text="@string/about_userhelp"
+                    android:textColor="@color/theme_textcolor_text"
+                    android:textSize="@dimen/selectbar_textsize" />
+
+                <include layout="@layout/module_divider_selectbar" />
+
+                <LinearLayout
+                    android:id="@+id/about_servicephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dip"
+                    android:background="@drawable/selector_background" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:text="@string/about_servicephone"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="@dimen/selectbar_textsize" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="10dip"
+                        android:text="@string/about_servicephone_number"
+                        android:textColor="#1893bb"
+                        android:textSize="@dimen/selectbar_textsize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:text="@string/about_service_explain"
+                android:textColor="#ffa6a6a5"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/trends_dealbg"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_padding_mini" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    	android:padding="@dimen/layout_padding_normal">
+
+        <View 
+	        android:layout_width="20dip"
+	        android:layout_height="20dip"
+	        android:layout_marginRight="@dimen/layout_padding_mini"
+	        android:background="@drawable/icon_store"/>
+        
+        <TextView
+            android:id="@+id/storeinfo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/module_storeinfo_tv_title"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_titlesmall" />
+    </LinearLayout>
+
+    <include layout="@layout/module_divider_list" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/layout_padding_mini" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/storeinfo_businesshours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/module_storeinfo_businesshours"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="@dimen/textsize_content" />
+
+            <TextView
+                android:id="@+id/storeinfo_telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/module_storeinfo_telephone"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="@dimen/textsize_content" />
+
+            <TextView
+                android:id="@+id/storeinfo_holiday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/module_storeinfo_holiday"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="@dimen/textsize_content"
+                android:visibility="gone"  />
+
+            <TextView
+                android:id="@+id/storeinfo_situation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/module_storeinfo_situation"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="@dimen/textsize_content"
+                android:visibility="gone"  />
+
+            <TextView
+                android:id="@+id/storeinfo_surroundings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/module_storeinfo_surroundings"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="@dimen/textsize_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/storeinfo_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/module_storeinfo_address"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="@dimen/textsize_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="60dip"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dip"
+            android:background="@color/theme_gray_dark" />
+
+        <ImageView
+            android:id="@+id/storeinfo_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:padding="5dip"
+            android:background="@drawable/selector_background"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/selector_phone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="theme_color">#FF33CCFF</color>
+    <color name="theme_color_dark">#FF22AADD</color>
+    <color name="theme_orange">#FFFF9900</color>
+    <color name="theme_cyan">#FF00CCCC</color>
+    <color name="theme_green">#FF66CC00</color>
+    <color name="theme_red">#FFFF3333</color>
+    <color name="theme_purple">#FFFF3366</color>
+    <color name="theme_gray">#FFEEEEEE</color>
+    <color name="theme_gray_dark">#FFDDDDDD</color>
+    <color name="theme_background">#FFF5F5F5</color>
+    <color name="theme_background_dark">#FFEEEEEE</color>
+    <color name="theme_titlebar_background">#FF22AADD</color>
+    <color name="theme_textcolor_title">#FFFFFFFF</color>
+    <color name="theme_textcolor_text">#FF333333</color>
+    <color name="theme_textcolor_gray">#FF555555</color>
+    <color name="theme_textcolor_button">#FFFFFFFF</color>
+    <color name="theme_button_background">#FF33CCFF</color>
+    
+    <color name="cover_light">#33FFFFFF</color>
+    <color name="cover_dark">#33000000</color>
+    
+    <color name="green">#00FF00</color>
+    <color name="gray">#999999</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="green_dark">#192F06</color>
+    <color name="gray_dark">#FF666666</color> 
+    
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    
+</resources>

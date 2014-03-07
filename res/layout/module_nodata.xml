@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/module_nodata_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+	<!-- android:drawableTop="@drawable/image_notfound" -->
+    <TextView
+        android:id="@+id/module_nodata_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:gravity="center"
+        android:text="@string/module_nodata_description"
+        android:textColor="@color/green_dark"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dip" />
+
+    <TextView
+        style="@style/button_style"
+        android:id="@+id/module_nodata_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/module_nodata_to_refresh" />
+
+</LinearLayout>

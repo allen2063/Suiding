@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/module_titlebar_main" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/titlebar_height"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitStart"
+        android:src="@drawable/image_acountbg" />
+
+    <com.suiding.widget.PullDownLinearLayout
+        android:id="@+id/account_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/titlebar_height"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/account_layout_info"
+            android:layout_width="match_parent"
+            android:layout_height="90dip" >
+
+            <TextView
+                android:id="@+id/account_tv_nickname"
+                style="@style/default_text_shadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="90dip"
+                android:layout_marginTop="10dip"
+                android:singleLine="true"
+                android:text="@string/account_tv_nickname"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/account_tv_autograph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/account_tv_nickname"
+                android:layout_marginLeft="90dip"
+                android:layout_marginRight="10dip"
+                android:maxLines="3"
+                android:minLines="2"
+                android:text="@string/account_tv_autograph"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/account_iv_headicon"
+                android:layout_width="70dip"
+                android:layout_height="70dip"
+                android:layout_gravity="top"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/trends_dealbg"
+                android:contentDescription="@string/app_name"
+                android:padding="2dip"
+                android:src="@drawable/image_person" />
+
+            <TextView
+                android:id="@+id/account_tv_praisenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dip"
+                android:background="@drawable/trends_zebra"
+                android:drawableLeft="@drawable/icon_thumb"
+                android:gravity="center"
+                android:text="@string/account_tv_praisenumber"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/account_toright"
+                android:layout_width="20dip"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_toright" />
+
+            <TextView
+                android:id="@+id/account_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dip"
+                android:background="@drawable/selector_background_module"
+                android:gravity="center"
+                android:minHeight="40dip"
+                android:minWidth="120dip"
+                android:text="@string/account_tv_login"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/theme_background" />
+
+            <ScrollView
+                android:id="@+id/account_scrollview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="53dip"
+                android:background="@color/theme_background"
+                android:layout_gravity="bottom"
+                android:fadingEdge="none"
+                android:scrollbarThumbVertical="@drawable/shape_scrollbar"
+                android:scrollbars="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/layout_padding_normal" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/trends_dealbg" >
+
+                        <LinearLayout
+                            android:id="@+id/account_coupon"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/selectbar_height"
+                            android:background="@drawable/selector_background"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="@dimen/selectbar_imagesize"
+                                android:layout_height="@dimen/selectbar_imagesize"
+                                android:layout_marginLeft="15dip"
+                                android:layout_marginRight="15dip"
+                                android:contentDescription="@string/app_name"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/icon_coupon" />
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:text="@string/account_tv_coupon"
+                                android:textColor="@color/theme_textcolor_text"
+                                android:textSize="@dimen/selectbar_textsize" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dip"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/icon_toright" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/account_layout_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layout_padding_normal"
+                        android:background="@drawable/trends_dealbg"
+                        android:orientation="vertical" >
+                        
+                        <LinearLayout
+                            android:id="@+id/account_ordermanage"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/selectbar_height"
+                            android:background="@drawable/selector_background"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="@dimen/selectbar_imagesize"
+                                android:layout_height="@dimen/selectbar_imagesize"
+                                android:layout_marginLeft="15dip"
+                                android:layout_marginRight="15dip"
+                                android:contentDescription="@string/app_name"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/icon_ordermanage" />
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:text="@string/account_tv_ordermanage"
+                                android:textColor="@color/theme_textcolor_text"
+                                android:textSize="@dimen/selectbar_textsize" />
+
+                            <TextView
+                                android:id="@+id/account_ordermanagenum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="25dip"
+                                android:visibility="gone"
+                                android:text="@string/account_tv_praisenumber"
+                                android:textColor="@color/theme_textcolor_text"
+                                android:textSize="@dimen/selectbar_textsize" />
+                            
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dip"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/icon_toright" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0px"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip"
+                            android:background="@color/theme_gray_dark" />
+                        
+                        <LinearLayout
+                            android:id="@+id/account_waitconfirm"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/selectbar_height"
+                            android:background="@drawable/selector_background"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="@dimen/selectbar_imagesize"
+                                android:layout_height="@dimen/selectbar_imagesize"
+                                android:layout_marginLeft="15dip"
+                                android:layout_marginRight="15dip"
+                                android:layout_gravity="center_vertical"
+                                android:contentDescription="@string/app_name"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/icon_waiting" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/account_tv_waitconfirm"
+                                android:textColor="@color/theme_textcolor_text"
+                                android:textSize="@dimen/selectbar_textsize" />
+                            
+					        <TextView 
+					            android:id="@+id/account_notifyorderwaiting"
+					            android:layout_width="25dip"
+					            android:layout_height="25dip"
+					            android:layout_margin="2dip"
+					            android:textSize="12sp"
+					            android:gravity="center"
+					            android:text="@string/account_tv_praisenumber"
+					            android:textColor="@android:color/white"
+					            android:background="@drawable/trends_notify"/>
+                            
+                            <View
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:layout_gravity="center_vertical" />
+
+                            <TextView
+                                android:id="@+id/account_waitconfirmnum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="25dip"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/account_tv_praisenumber"
+                                android:textColor="@color/theme_textcolor_text"
+                                android:textSize="@dimen/selectbar_textsize" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0px"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip"
+                            android:background="@color/theme_gray_dark" />
+
+                        <LinearLayout
+                            android:id="@+id/account_orderconfirm"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/selectbar_height"
+                            android:background="@drawable/selector_background"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="@dimen/selectbar_imagesize"
+                                android:layout_height="@dimen/selectbar_imagesize"
+                                android:layout_marginLeft="15dip"
+                                android:layout_marginRight="15dip"
+                                android:layout_gravity="center_vertical"
+                                android:contentDescription="@string/app_name"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/icon_confirm" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/account_tv_successful"
+                                android:textColor="@color/theme_textcolor_text"
+                                android:textSize="@dimen/selectbar_textsize" />
+                            
+					        <TextView 
+					            android:id="@+id/account_notifyorderconfirm"
+					            android:layout_width="25dip"
+					            android:layout_height="25dip"
+					            android:layout_margin="2dip"
+					            android:textSize="12sp"
+					            android:gravity="center"
+					            android:text="@string/account_tv_praisenumber"
+					            android:textColor="@android:color/white"
+					            android:background="@drawable/trends_notify"/>
+                            
+                            <View
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:layout_gravity="center_vertical" />
+
+                            <TextView
+                                android:id="@+id/account_successnum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="25dip"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/account_tv_praisenumber"
+                                android:textColor="@color/theme_textcolor_text"
+                                android:textSize="@dimen/selectbar_textsize" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0px"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip"
+                            android:background="@color/theme_gray_dark" />
+
+                        <LinearLayout
+                            android:id="@+id/account_refuseconfirm"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/selectbar_height"
+                            android:background="@drawable/selector_background"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="@dimen/selectbar_imagesize"
+                                android:layout_height="@dimen/selectbar_imagesize"
+                                android:layout_marginLeft="15dip"
+                                android:layout_marginRight="15dip"
+                                android:layout_gravity="center_vertical"
+                                android:contentDescription="@string/app_name"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/icon_canceled" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/account_tv_refusing"
+                                android:textColor="@color/theme_textcolor_text"
+                                android:textSize="@dimen/selectbar_textsize" />
+                            
+					        <TextView 
+					            android:id="@+id/account_notifyorderefused"
+					            android:layout_width="25dip"
+					            android:layout_height="25dip"
+					            android:layout_margin="2dip"
+					            android:textSize="12sp"
+					            android:gravity="center"
+					            android:text="@string/account_tv_praisenumber"
+					            android:textColor="@android:color/white"
+					            android:background="@drawable/trends_notify"/>
+                            
+                            <View
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:layout_gravity="center_vertical" />
+
+                            <TextView
+                                android:id="@+id/account_refusenum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="25dip"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/account_tv_praisenumber"
+                                android:textColor="@color/theme_textcolor_text"
+                                android:textSize="@dimen/selectbar_textsize" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layout_padding_normal"
+                        android:background="@drawable/trends_dealbg"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/account_setting"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/selectbar_height"
+                            android:background="@drawable/selector_background"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="@dimen/selectbar_imagesize"
+                                android:layout_height="@dimen/selectbar_imagesize"
+                                android:layout_marginLeft="15dip"
+                                android:layout_marginRight="15dip"
+                                android:contentDescription="@string/app_name"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/icon_setting" />
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:text="@string/account_tv_setting"
+                                android:textColor="@color/theme_textcolor_text"
+                                android:textSize="@dimen/selectbar_textsize" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dip"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/icon_toright" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/account_logout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/selectbar_height"
+                            android:background="@drawable/selector_background">
+	                        <View
+	                            android:layout_width="fill_parent"
+	                            android:layout_height="1.0px"
+	                            android:layout_marginLeft="5dip"
+	                            android:layout_marginRight="5dip"
+	                            android:background="@color/theme_gray_dark" />
+                            
+
+                            <ImageView
+                                android:layout_width="@dimen/selectbar_imagesize"
+                                android:layout_height="@dimen/selectbar_imagesize"
+                                android:layout_marginLeft="15dip"
+                                android:layout_marginRight="15dip"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:contentDescription="@string/app_name"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/icon_logout" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="65dip"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/account_tv_logout"
+                                android:textColor="@color/theme_textcolor_text"
+                                android:textSize="@dimen/selectbar_textsize" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dip"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/icon_toright" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+             	android:layout_height="55dip"
+                android:background="@drawable/trends_dealbg"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/account_birthmanage"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_background"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="@dimen/selectbar_imagesize"
+                        android:layout_height="@dimen/selectbar_imagesize"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon_birthmanage" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/icon_toright"
+                        android:gravity="center_vertical"
+                        android:text="@string/account_tv_birthrecord"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="@dimen/textsize_content" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dip"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/icon_toright"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1.0px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/line_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/account_favorite"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_background"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="@dimen/selectbar_imagesize"
+                        android:layout_height="@dimen/selectbar_imagesize"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon_favortite" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/icon_toright"
+                        android:gravity="center_vertical"
+                        android:text="@string/account_tv_mycollection"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="@dimen/textsize_content" />
+
+                    <TextView
+                        android:id="@+id/account_favoritenum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="25dip"
+                        android:text="@string/account_tv_praisenumber"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="@dimen/selectbar_textsize"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </com.suiding.widget.PullDownLinearLayout>
+
+</FrameLayout>

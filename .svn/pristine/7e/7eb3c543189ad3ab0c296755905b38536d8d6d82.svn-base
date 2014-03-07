@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_dark"
+    android:orientation="vertical" >
+
+    <include layout="@layout/module_titlebar_other" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_padding_normal"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/verify_email_edit_mail"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:background="@drawable/frame_little_black"
+            android:ems="10"
+            android:hint="@string/verify_email_edit_mail"
+            android:padding="@dimen/layout_padding_mini"
+            android:imeOptions="actionDone"
+            android:inputType="text|textEmailAddress"
+            android:textSize="@dimen/textsize_content" />
+
+        <Button
+            android:id="@+id/verify_email_btn_send"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button"
+            android:text="@string/verify_email_btn_send"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/verify_email_txt_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_padding_normal"
+        android:layout_marginRight="@dimen/layout_padding_normal"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="@string/verify_email_txt_prompt"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</LinearLayout>

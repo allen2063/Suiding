@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/trends_dealbg"
+    android:padding="@dimen/layout_padding_mini" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/reserve_setnumber"
+        android:textColor="@color/theme_color_dark"
+        android:textSize="@dimen/module_title_textsize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="2dip"
+        android:background="@color/theme_gray_dark" />
+
+    <LinearLayout
+        android:id="@+id/reserve_number_contianter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/reserve_number_product"
+            layout="@layout/module_setnumber" />
+
+        <include
+            android:id="@+id/reserve_number_people"
+            layout="@layout/module_setnumber" />
+    </LinearLayout>
+
+</LinearLayout>

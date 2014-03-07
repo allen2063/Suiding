@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/trends_dealbg"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_padding_normal" >
+
+    <include
+        android:id="@+id/reservemodule_resturant_numproduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        layout="@layout/module_setnumber" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="2dip"
+        layout="@layout/module_divider_selectbar" />
+
+    <include
+        android:id="@+id/reservemodule_resturant_numpeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        layout="@layout/module_setnumber" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/layout_padding_mini"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/reservemodule_resturant_peoples"
+            android:textColor="#FF1199CC"
+            android:textSize="@dimen/textsize_content" />
+
+        <EditText
+            android:id="@+id/reservemodule_resturant_peoples"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/trends_editback"
+            android:hint="@string/reservemodule_resturant_hine_peoples"
+            android:inputType="number"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="2dip"
+        android:background="@color/theme_gray_dark"
+        android:visibility="gone" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="2dip"
+        layout="@layout/module_divider_selectbar" />
+
+    <LinearLayout
+        android:id="@+id/reservemodule_resturant_contianer"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reservemodule_resturant_arrival"
+            android:textColor="#FF1199CC"
+            android:textSize="@dimen/textsize_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/reservemodule_resturant_arrival"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+
+        <FrameLayout
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:background="#FFCC0F" >
+
+            <TextView
+                android:id="@+id/reservemodule_resturant_arrival_munus"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:background="@drawable/selector_disable_gray"
+                android:gravity="center"
+                android:text="@string/button_minus"
+                android:textColor="@android:color/white" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/reservemodule_resturant_arrival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minWidth="45dip"
+            android:padding="5dip"
+            android:text="@string/reservemodule_resturant_hint_arrival"
+            android:textColor="@color/theme_color_dark"
+            android:textSize="@dimen/textsize_content" />
+
+        <FrameLayout
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginRight="10dip"
+            android:background="#FFBB11" >
+
+            <TextView
+                android:id="@+id/reservemodule_resturant_arrival_plus"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:background="@drawable/selector_disable_gray"
+                android:gravity="center"
+                android:text="@string/button_plus"
+                android:textColor="@android:color/white" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

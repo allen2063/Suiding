@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titlebar_height"
+    android:background="@color/theme_titlebar_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/titlebar_search_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:text="@string/app_name"
+        android:textSize="@dimen/titlebar_textsize"
+        android:textColor="@color/theme_textcolor_title"
+        android:visibility="gone"  />
+    
+    <ImageView
+        android:id="@+id/titlebar_search_goback"
+        android:layout_width="50dip"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/selector_button_back"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_goback" />
+
+    <EditText
+        android:id="@+id/titlebar_search_et_keyword"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dip"
+        android:layout_weight="1.0"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/icon_search"
+        android:ems="10"
+        android:hint="@string/titlebar_search_hint_keyword"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:gravity="center_vertical"
+        android:text="@string/titlebar_search_submit"
+        android:textColor="@color/theme_textcolor_title"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/titlebar_search_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dip"
+        android:background="@drawable/selector_button_back"
+        android:gravity="center"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="@string/titlebar_search_submit"
+        android:textColor="@color/theme_textcolor_title"
+        android:textSize="@dimen/button_textsize" />
+
+</LinearLayout>

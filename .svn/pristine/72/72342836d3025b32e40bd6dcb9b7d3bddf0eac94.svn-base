@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_dark"
+    android:orientation="vertical" >
+
+    <include layout="@layout/module_titlebar_other" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_padding_normal"
+        android:layout_marginRight="@dimen/layout_padding_normal"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/frame_selectbar"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/order_ordered"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/selector_background" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:src="@drawable/icon_waiting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView1"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="@string/order_ordered"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="@dimen/button_textsize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:contentDescription="@string/app_name"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:src="@drawable/icon_toright" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_padding_normal"
+        android:layout_marginRight="@dimen/layout_padding_normal"
+        android:layout_marginTop="@dimen/layout_padding_normal"
+        android:background="@drawable/frame_selectbar"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/order_confirmed"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/selector_background" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:src="@drawable/icon_confirm" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView2"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="@string/order_confirmed"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="@dimen/button_textsize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:contentDescription="@string/app_name"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:src="@drawable/icon_toright" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_padding_normal"
+        android:layout_marginRight="@dimen/layout_padding_normal"
+        android:layout_marginTop="@dimen/layout_padding_normal"
+        android:background="@drawable/frame_selectbar"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/order_canceled"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/selector_background" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:src="@drawable/icon_canceled" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView3"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="@string/order_canceled"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="@dimen/button_textsize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:contentDescription="@string/app_name"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:src="@drawable/icon_toright" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

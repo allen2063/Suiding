@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_padding_normal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/module_comment_title"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/ic_category_other"
+            android:gravity="center_vertical"
+            android:text="@string/module_product_tv_title"
+            android:textColor="@color/green_dark" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13.0dip"
+            android:isIndicator="true"
+            android:maxHeight="16.0dip"
+            android:minHeight="16.0dip"
+            android:numStars="5"
+            android:progressDrawable="@drawable/selector_rating"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/module_product_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_background_module"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/layout_padding_normal" >
+
+            <ProgressBar
+                android:id="@+id/module_product_progress"
+                android:layout_width="20dip"
+                android:layout_height="20dip" />
+
+            <TextView
+                android:id="@+id/module_product_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/module_product_refreshing"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="@dimen/selectbar_textsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/module_product_cell_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/module_product_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_background_module"
+                android:gravity="center"
+                android:padding="@dimen/layout_padding_normal"
+                android:text="@string/module_product_more"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="@dimen/selectbar_textsize"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <CheckBox
+        android:id="@+id/module_product_expand"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:background="@drawable/selector_background_module"
+        android:button="@null"
+        android:drawableTop="@drawable/selector_expand"
+        android:gravity="center" />
+</LinearLayout>

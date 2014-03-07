@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:background="@drawable/selector_background_white"
+    android:padding="@dimen/layout_padding_normal" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <QuickContactBadge
+            android:id="@+id/listitem_birthrecord_headimg"
+            android:layout_width="50dip"
+            android:layout_height="50dip"/>
+
+        <TextView
+            android:id="@+id/listitem_birthrecord_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:textSize="20sp"
+            android:textColor="@color/gray_dark"
+            android:text="@string/listitem_birthrecord_name" />
+
+        <ImageView
+            android:id="@+id/listitem_birthrecord_iconsex"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/ic_man"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="80dip"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/listitem_birthrecord_remainday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/listitem_birthrecord_day"
+            android:textColor="@color/theme_orange"
+            android:textSize="28sp"
+            android:text="@string/listitem_birthrecord_remainday" />
+
+        <TextView
+            android:id="@+id/listitem_birthrecord_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/listitem_birthrecord_remainday"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="4dip"
+            android:text="@string/listitem_birthrecord_day"
+            android:textColor="@color/theme_orange"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/listitem_birthrecord_lunar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="2dip"
+            android:paddingRight="2dip"
+            android:text="@string/listitem_birthrecord_lunar"
+            android:textColor="@android:color/white"
+            android:background="@color/theme_color" />
+
+        <TextView
+            android:id="@+id/listitem_birthrecord_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="bottom|right"
+            android:textColor="@color/theme_color"
+            android:textSize="14sp"
+            android:text="@string/listitem_birthrecord_birthday" />
+    </RelativeLayout>
+
+</LinearLayout>

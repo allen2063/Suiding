@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PullToRefresh">
+        <attr name="adapterViewBackground" format="reference|color" />
+        <attr name="headerBackground" format="reference|color" />
+        <attr name="headerTextColor" format="color" />
+        <attr name="divider" format="reference|color" />
+        <attr name="dividerHeight" format="dimension" />
+        <attr name="cacheColorHint" format="color" />
+        <attr name="mode">
+            <flag name="pullDown" value="0x1" />
+            <flag name="pullUp" value="0x2" />
+            <flag name="both" value="0x3" />
+        </attr>
+    </declare-styleable>
+    
+    <declare-styleable name="DashedLine">
+        <attr name="lineColor" format="color"/>
+    </declare-styleable>
+    
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_background_white"
+    android:orientation="horizontal"
+    android:padding="@dimen/layout_padding_mini">
+
+    <QuickContactBadge
+        android:id="@+id/listitem_birinvite_headimg"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="5.0"
+        android:orientation="vertical"
+        android:paddingLeft="5dip" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dip" >
+
+            <TextView
+                android:id="@+id/listitem_birinvite_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/listitem_birinvite_title"
+                android:textColor="@color/theme_color"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/listitem_birinvite_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:paddingBottom="2dip"
+            android:text="@string/listitem_birinvite_describe"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

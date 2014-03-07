@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/fixed_list_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theme_gray"
+            android:paddingBottom="2dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="2dip"
+            android:text="@string/fixed_list_header_tv_citybyfixed"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0px"
+            android:background="@color/theme_gray_dark" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/citychoose" />
+
+            <TextView
+                android:id="@+id/fixed_list_header_tv_fixing"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dip"
+                android:gravity="center"
+                android:text="@string/fixed_list_header_tv_fixing"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/fixed_list_header_bt_city"
+                style="@style/button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:background="@color/theme_button_background"
+                android:text="@string/fixed_list_header_bt_text"
+                android:textColor="@color/theme_textcolor_button"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/fixed_list_header_progress"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dip"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fixed_list_header_developedlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/theme_gray"
+                android:paddingBottom="2dip"
+                android:paddingLeft="5dip"
+                android:paddingTop="2dip"
+                android:text="@string/fixed_list_header_tv_citydone"
+                android:textColor="@color/theme_textcolor_text"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/fixed_list_header_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/fixed_list_header_tv_cityhotting"
+                    android:textColor="@color/theme_textcolor_text"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theme_gray"
+            android:paddingBottom="2dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="2dip"
+            android:text="@string/fixed_list_header_tv_cityhotting"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

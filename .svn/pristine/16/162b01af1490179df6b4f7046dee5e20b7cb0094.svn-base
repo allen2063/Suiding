@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <FrameLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" >
+        <QuickContactBadge
+            android:id="@+id/ordermenuitem_headimg"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/ordermenuitem_name"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/rsrmenulistheader_name"
+        android:textColor="@color/theme_textcolor_text"
+        android:textSize="@dimen/textsize_content" />
+
+    <TextView
+        android:id="@+id/ordermenuitem_oldprice"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/rsrmenulistheader_newprice"
+        android:textColor="@color/theme_textcolor_text"
+        android:textSize="@dimen/textsize_content"
+        android:visibility="gone"  />
+
+    <TextView
+        android:id="@+id/ordermenuitem_newprice"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/rsrmenulistheader_newprice"
+        android:textColor="@color/theme_textcolor_text"
+        android:textSize="@dimen/textsize_content"/>
+
+    <FrameLayout 
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+	    <CheckBox
+        	android:id="@+id/ordermenuitem_checkbox"
+	        android:layout_width="wrap_content"
+	        android:layout_height="35dip"
+        	android:layout_gravity="center"/>
+    </FrameLayout>
+
+</LinearLayout>

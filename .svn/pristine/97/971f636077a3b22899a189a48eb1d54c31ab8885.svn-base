@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/trends_dealbg"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_padding_mini" >
+
+    <LinearLayout
+        android:id="@+id/module_comment_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/layout_padding_normal" >
+
+        <View
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_marginRight="@dimen/layout_padding_mini"
+            android:background="@drawable/icon_comment" />
+
+        <TextView
+            android:id="@+id/module_comment_title"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:text="@string/module_review_tv_title"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_titlesmall" />
+
+        <RatingBar
+            android:id="@+id/module_comment_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="18sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13.0dip"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressDrawable="@drawable/selector_rating" />
+    </LinearLayout>
+
+    <include layout="@layout/module_divider_list" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/layout_padding_mini" >
+
+            <ProgressBar
+                android:id="@+id/module_comment_progress"
+                android:layout_width="20dip"
+                android:layout_height="20dip" />
+
+            <TextView
+                android:id="@+id/module_comment_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/layout_padding_mini"
+                android:text="@string/module_product_refreshing"
+                android:textColor="#ff2b8dab"
+                android:textSize="@dimen/textsize_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/module_comment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_padding_mini"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/module_comment_toall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_background"
+                android:gravity="center"
+                android:padding="@dimen/layout_padding_mini"
+                android:text="@string/module_product_more"
+                android:textColor="#ff2b8dab"
+                android:textSize="@dimen/textsize_content" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

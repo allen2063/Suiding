@@ -1,0 +1,318 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/module_titlebar_main" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:background="@color/theme_background_dark"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/frame_selectbar"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/attention_twitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_background" >
+
+                    <ImageView
+                        android:id="@+id/attention_imageView2"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/attention_TextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:layout_toRightOf="@+id/attention_imageView2"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/attention_business_district"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/attention_budis_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:layout_toRightOf="@+id/attention_TextView2"
+                        android:background="@drawable/trends_notify"
+                        android:gravity="center"
+                        android:text="@string/attention_defaultnumber"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:src="@drawable/icon_toright" />
+                </RelativeLayout>
+
+                <include layout="@layout/module_divider_selectbar" />
+
+                <RelativeLayout
+                    android:id="@+id/attention_favorite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_background" >
+
+                    <ImageView
+                        android:id="@+id/attention_imageView1"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon_favorite" />
+
+                    <TextView
+                        android:id="@+id/attention_TextView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:layout_toRightOf="@+id/attention_imageView1"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/attention_collect"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/attention_collect_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:layout_toRightOf="@+id/attention_TextView1"
+                        android:background="@drawable/trends_notify"
+                        android:gravity="center"
+                        android:text="@string/attention_defaultnumber"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:src="@drawable/icon_toright" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/frame_selectbar"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/attention_bir_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_background" >
+
+                    <ImageView
+                        android:id="@+id/attention_imageView4"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image_birthrecord" />
+
+                    <TextView
+                        android:id="@+id/attention_TextView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:layout_toRightOf="@+id/attention_imageView4"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/attention_birthday_record"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/attention_bir_record_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:layout_toRightOf="@+id/attention_TextView4"
+                        android:background="@drawable/trends_notify"
+                        android:gravity="center"
+                        android:text="@string/attention_defaultnumber"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:src="@drawable/icon_toright" />
+                </RelativeLayout>
+
+                <include layout="@layout/module_divider_selectbar" />
+
+                <RelativeLayout
+                    android:id="@+id/attention_bir_remind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_background" >
+
+                    <ImageView
+                        android:id="@+id/attention_imageView5"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image_birthremind" />
+
+                    <TextView
+                        android:id="@+id/attention_TextView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:layout_toRightOf="@+id/attention_imageView5"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/attention_bir_remind"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/attention_bir_remind_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:layout_toRightOf="@+id/attention_TextView5"
+                        android:background="@drawable/trends_notify"
+                        android:gravity="center"
+                        android:text="@string/attention_defaultnumber"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:src="@drawable/icon_toright" />
+                </RelativeLayout>
+
+                <include layout="@layout/module_divider_selectbar" />
+
+                <RelativeLayout
+                    android:id="@+id/attention_bir_invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_background" >
+
+                    <ImageView
+                        android:id="@+id/attention_imageView6"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image_birthinvite" />
+
+                    <TextView
+                        android:id="@+id/attention_TextView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:layout_toRightOf="@+id/attention_imageView6"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/attention_bir_invite"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/attention_bir_invite_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:layout_toRightOf="@+id/attention_TextView6"
+                        android:background="@drawable/trends_notify"
+                        android:gravity="center"
+                        android:text="@string/attention_defaultnumber"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:src="@drawable/icon_toright" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

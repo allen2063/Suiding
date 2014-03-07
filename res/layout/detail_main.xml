@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:suiding="http://schemas.android.com/apk/res/com.suiding.activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_dark"
+    android:orientation="vertical" >
+
+    <include layout="@layout/module_titlebar_other" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0" >
+
+        <com.suiding.widget.RefreshScorllView
+            android:id="@+id/detail_scorllview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fastScrollEnabled="true"
+            android:focusable="true"
+            suiding:cacheColorHint="@android:color/transparent"
+            suiding:divider="@drawable/line_horizontal"
+            suiding:dividerHeight="1.0px" />
+        
+        <View 
+            android:id="@+id/detail_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cover_dark"/>
+    </FrameLayout>
+
+    <include layout="@layout/module_comment_editbar"
+        android:visibility="gone" />
+
+</LinearLayout>

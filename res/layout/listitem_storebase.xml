@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_background_white"
+    android:paddingBottom="@dimen/module_padding"
+    android:orientation="horizontal">
+    
+    <QuickContactBadge
+        android:id="@+id/listitem_storebase_headimage"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_margin="@dimen/module_padding"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"/>
+    
+    <RelativeLayout
+        android:id="@+id/listitem_storebase_infopanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/listitem_storebase_headimage"
+        android:layout_marginRight="@dimen/module_padding"
+        android:orientation="vertical">
+
+        <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" > -->
+
+            <TextView
+                android:id="@+id/listitem_storebase_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:singleLine="true"
+                android:text="@string/listitem_storebase_title"
+                android:textColor="#2299DD"
+                android:textSize="@dimen/textsize_titlesmall" />
+
+
+            <TextView
+                android:id="@+id/listitem_storebase_priceunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/listitem_storebase_priceunit"
+                android:textColor="#2299DD" />
+
+            <TextView
+                android:id="@+id/listitem_storebase_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dip"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/listitem_storebase_priceunit"
+                android:text="@string/listitem_storebase_price"
+                android:textColor="#2299DD"
+                android:textSize="25sp" />
+            
+            <TextView
+                android:id="@+id/listitem_storebase_deprecated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/listitem_storebase_price"
+                android:text="@string/result_search_tv_unit"
+                android:textColor="@color/gray"/>
+            
+        <!-- </LinearLayout> -->
+
+        <LinearLayout
+            android:id="@+id/listitem_storebase_coupon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dip"
+            android:layout_toLeftOf="@+id/listitem_storebase_status"
+            android:layout_below="@+id/listitem_storebase_title"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/listitem_storebase_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:singleLine="true"
+                android:textSize="@dimen/textsize_content"
+                android:text="@string/listitem_storebase_product"
+                android:textColor="@color/gray_dark"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/listitem_storebase_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/listitem_storebase_coupon"
+                android:textSize="@dimen/textsize_content"
+                android:textColor="@color/gray_dark"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/listitem_storebase_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dip"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/listitem_storebase_status"
+            android:layout_below="@+id/listitem_storebase_coupon_layout"
+            android:text="@string/listitem_storebase_coupon"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/listitem_storebase_addresslayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dip"
+            android:layout_below="@+id/listitem_storebase_description"
+            android:layout_toLeftOf="@+id/listitem_storebase_status"
+            android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/listitem_storebase_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/listitem_storebase_address"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/textsize_content" />
+
+                <LinearLayout
+                    android:id="@+id/listitem_storebase_facility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:divider="@color/red"
+                    android:dividerHeight="4.0px"
+                    android:dividerPadding="5dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+			            android:id="@+id/listitem_storebase_distance"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+			            android:layout_gravity="bottom"
+			            android:layout_marginLeft="0dip"
+			            android:drawableLeft="@drawable/ic_location"
+			            android:drawablePadding="0dip"
+			            android:gravity="right|bottom"
+			            android:text="@string/result_search_tv_distance"
+			            android:textColor="#666666"
+			            android:textSize="12sp" />
+                    
+                    <ImageView
+                    	android:id="@+id/listitem_storebase_wifi"
+                        android:layout_width="13dip"
+                        android:layout_height="13dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginBottom="2dip"
+                        android:layout_gravity="bottom"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/icon_wifimark" />
+
+                    <ImageView
+                    	android:id="@+id/listitem_storebase_park"
+                        android:layout_width="13dip"
+                        android:layout_height="13dip"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="2dip"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/icon_parkmark" />
+                </LinearLayout>
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/listitem_storebase_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/listitem_storebase_addresslayout"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_background_status"
+            android:paddingLeft="2dip"
+            android:paddingRight="2dip"
+            android:singleLine="true"
+            android:text="@string/listitem_storebase_status"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_titlesmall" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

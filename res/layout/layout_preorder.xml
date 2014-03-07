@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:suiding="http://schemas.android.com/apk/res/com.suiding.activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_dark"
+    android:orientation="vertical" >
+
+    <include layout="@layout/module_titlebar_other" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/theme_background_dark"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_padding_normal"
+                android:layout_marginRight="@dimen/layout_padding_normal"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/trends_dealbg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/preorder_choosecity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/titlebar_height"
+                    android:background="@drawable/selector_background" >
+
+                    <ImageView
+                        android:id="@+id/attention_imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="5dip"
+                        android:paddingTop="5dip"
+                        android:src="@drawable/image_person" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/attention_imageView2"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/preorder_city"
+                        android:textColor="#009bc8"
+                        android:textSize="@dimen/button_textsize" />
+
+                    <TextView
+                        android:id="@+id/preorder_choosecity_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/preorder_iamge2"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/preorder_city"
+                        android:textColor="#838383"
+                        android:textSize="@dimen/button_textsize" />
+
+                    <ImageView
+                        android:id="@+id/preorder_iamge2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:src="@drawable/icon_toright" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/preorder_industry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_padding_normal"
+                android:layout_marginRight="@dimen/layout_padding_normal"
+                android:layout_marginTop="@dimen/layout_padding_normal"
+                android:background="@drawable/selector_background_module"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/titlebar_height"
+                    android:background="@drawable/selector_background" >
+
+                    <ImageView
+                        android:id="@+id/attention_imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="5dip"
+                        android:paddingTop="5dip"
+                        android:src="@drawable/image_person" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/attention_imageView4"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/preorder_industry"
+                        android:textColor="#009bc8"
+                        android:textSize="@dimen/button_textsize" />
+
+                    <TextView
+                        android:id="@+id/preorder_industry_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/preorder_iamge3"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/preorder_industry"
+                        android:textColor="#838383"
+                        android:textSize="@dimen/button_textsize" />
+
+                    <ImageView
+                        android:id="@+id/preorder_iamge3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:src="@drawable/icon_toright" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/preorder_industryex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_padding_normal"
+                android:layout_marginRight="@dimen/layout_padding_normal"
+                android:layout_marginTop="@dimen/layout_padding_normal"
+                android:background="@drawable/selector_background_module"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/titlebar_height"
+                    android:background="@drawable/selector_background" >
+
+                    <ImageView
+                        android:id="@+id/attention_imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="5dip"
+                        android:paddingTop="5dip"
+                        android:src="@drawable/image_person" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/attention_imageView5"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/preorder_industryex"
+                        android:textColor="#009bc8"
+                        android:textSize="@dimen/button_textsize" />
+
+                    <TextView
+                        android:id="@+id/preorder_industryex_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/preorder_iamge4"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/preorder_industryex"
+                        android:textColor="#838383"
+                        android:textSize="@dimen/button_textsize" />
+
+                    <ImageView
+                        android:id="@+id/preorder_iamge4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:src="@drawable/icon_toright" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_padding_normal"
+                android:layout_marginRight="@dimen/layout_padding_normal"
+                android:layout_marginTop="@dimen/layout_padding_normal"
+                android:background="@drawable/selector_background_module"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/preorder_enterkeywords"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/titlebar_height"
+                    android:background="@drawable/selector_background" >
+
+                    <ImageView
+                        android:id="@+id/attention_imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="5dip"
+                        android:paddingTop="5dip"
+                        android:src="@drawable/image_person" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/attention_imageView6"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/preorder_keyword"
+                        android:textColor="#009bc8"
+                        android:textSize="@dimen/button_textsize" />
+
+                    <EditText
+                        android:id="@+id/preorder_enterkeywords_result"
+                        android:layout_width="150dip"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/preorder_iamge5"
+                        android:padding="5dip"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:hint="@string/home_keyword_hint"
+                        android:background="@drawable/trends_editback"
+                        android:textSize="@dimen/textsize_content" />
+
+                    <ImageView
+                        android:id="@+id/preorder_iamge5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:src="@drawable/icon_toright"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_padding_normal"
+                android:layout_marginRight="@dimen/layout_padding_normal"
+                android:layout_marginTop="@dimen/layout_padding_normal"
+                android:background="@drawable/trends_dealbg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/preorder_entertime"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/titlebar_height"
+                    android:background="@drawable/selector_background" >
+
+                    <ImageView
+                        android:id="@+id/attention_imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="5dip"
+                        android:paddingTop="5dip"
+                        android:src="@drawable/image_person" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/attention_imageView3"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/preorder_time"
+                        android:textColor="#009bc8"
+                        android:textSize="@dimen/button_textsize" />
+
+                    <TextView
+                        android:id="@+id/preorder_entertime_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/preorder_iamge6"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/preorder_days"
+                        android:textColor="#838383"
+                        android:textSize="@dimen/button_textsize" />
+
+                    <ImageView
+                        android:id="@+id/preorder_iamge6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:src="@drawable/icon_toright" />
+                </RelativeLayout>
+
+                <com.suiding.widget.DashedLine
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0px"
+                    suiding:lineColor="@color/theme_background_dark" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="27.5dip"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:text="@string/preorder_timespan"
+                            android:textColor="#009bc8"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/preorder_iamge7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dip"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/icon_toright" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/textView1"
+                            android:layout_alignBottom="@+id/textView1"
+                            android:layout_toLeftOf="@+id/preorder_iamge7"
+                            android:text="@string/addbirthday_birthday_hint"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:text="@string/perorder_timeleave"
+                            android:textColor="#009bc8"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/preorder_iamge8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dip"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/icon_toright" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/textView2"
+                            android:layout_alignBottom="@+id/textView2"
+                            android:layout_toLeftOf="@+id/preorder_iamge8"
+                            android:text="@string/addbirthday_birthday_hint"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/preorder_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_margin="@dimen/layout_padding_normal"
+        android:background="@drawable/selector_button"
+        android:text="@string/home_tv_search"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

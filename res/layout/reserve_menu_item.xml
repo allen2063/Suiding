@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/reserve_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <QuickContactBadge
+            android:id="@+id/reserve_item_headimg"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_margin="5dip"
+            android:scaleType="fitXY" />
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <include layout="@layout/module_setnumber" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/reserve_item_totalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:minWidth="55dip"
+            android:text="@string/reserve_item_totalprice"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+
+        <View
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/reserve_item_bt_delete"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+        	android:background="#ff9933"
+            android:gravity="center"
+            android:text="@string/button_delete"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="2dip"
+        android:background="@color/theme_gray"
+        android:visibility="gone" />
+
+</LinearLayout>

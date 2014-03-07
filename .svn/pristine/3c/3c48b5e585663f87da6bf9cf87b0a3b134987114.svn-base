@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">随订</string>
+    <string name="app_version">随订 V%s</string>
+    <string name="lesou_web">www.lesou.com</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="sex_male">男</string>
+    <string name="sex_female">女</string>
+    <string name="vaule_bl_have">有</string>
+    
+    <string name="taskbar_update_precent">已下载%d%%</string>
+
+    <string name="fixed_need_hand_movement">系统暂时无法定位您的位置信息，您需要手动定位。</string>
+    <string name="fixed_failed_nodata">定位失败，无法获取身边信息！</string>
+    
+    <string name="button_minus">—</string>
+    <string name="button_plus">+</string>
+    <string name="button_delete">x</string>
+    
+    <string name="birthday_record">生日记录</string>
+    <string name="birthday_remind">生日提醒</string>
+    
+    <string name="about_service_explain">客服电话（按当地市话标准收费）</string>
+    <string name="about_userhelp">用户帮助</string>
+    <string name="about_version_format">Version V %s</string>
+    <string name="about_version">Version V 1.0.0.0</string>
+    <string name="about_useragreement">用户协议</string>
+    <string name="about_servicephone">加盟电话</string>
+    <string name="about_servicephone_number">156&#8722;8528&#8722;8999</string>
+    <string name="about_slogan">每天随订一次</string>
+    <string name="about_app_name">随  订</string>
+    
+    
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="title_activity_result_tab">ResultTabActivity</string>
+    <string name="title_activity_fixed_position">城市定位</string>
+    <string name="title_activity_search">搜索页面</string>
+    <string name="title_activity_detail">详细页面</string>
+    <string name="title_activity_feedback">意见反馈</string>
+    <string name="title_activity_regist">注册账户</string>
+    <string name="title_activity_aboutleso">关于随订</string>
+    <string name="title_activity_promotion">商家活动</string>
+    <string name="title_activity_userlogin">用户登录</string>
+    <string name="title_activity_reserve">预订页面</string>    
+    <string name="title_activity_coupon">活动页面</string>
+    <string name="title_activity_review">评论页面</string>
+    <string name="title_activity_detail_hotel">酒店详细页面</string>
+    <string name="title_activity_album">相册</string>
+    <string name="title_activity_attention">关注</string>
+    <string name="title_activity_attention_list">关注列表</string>
+    <string name="title_activity_favorite">我的收藏</string>
+    <string name="title_activity_twitter">商圈</string>
+    <string name="title_activity_busycoupon">商家活动</string>
+    <string name="title_activity_birinvite">生日邀请</string>
+    <string name="title_activity_birrecord">生日记录</string>
+    <string name="title_activity_birremind">生日提醒</string>
+    <string name="title_activity_editaccount">编辑资料</string>
+    <string name="title_activity_waitconfirm">等待确认</string>
+    <string name="title_activity_refusing">无效预订</string>
+    <string name="title_activity_reservation">成功预订</string>
+    <string name="title_activity_ordermanage">订单管理</string>
+    <string name="title_activity_payhelp">用户帮助</string>
+    <string name="title_activity_preoder">搜索选项</string>
+    <string name="title_activity_birthdayadd">添加生日</string>
+    <string name="title_activity_birthdayedit">编辑生日</string>
+    <string name="title_activity_birthdaysource">选择添加方式</string>
+    <string name="title_activity_setting">系统设置</string>
+    <string name="title_activity_resulthotel">酒店列表</string>
+    <string name="title_activity_verify_phone">手机验证</string>
+    <string name="title_activity_verify_email">邮箱验证</string>
+    <string name="title_activity_myquickmark">我的二维码</string>
+    <string name="title_activity_addbirthsource">选择添加方式</string>
+    <string name="title_activity_birthmanage">生日管理</string>
+    <string name="title_activity_contact">联系人</string>
+    <string name="title_activity_listcoupon">店面活动</string>
+
+    <string name="titlebar_other_tv_finish">完成</string>
+    
+    <string name="myqrcode_detail">扫一扫二维码图案，加我好友。</string>
+    
+    <string name="tv_location">正在定位</string>
+    <string name="search_keyword">搜索关键字</string>
+    
+    <string name="account_tv_manage">系统管理</string>
+    <string name="account_tv_other">生日管理</string>
+    <string name="account_tv_bookingrecord">预订记录</string>
+    <string name="account_tv_waitconfirm">等待确认</string>
+    <string name="account_tv_refusing">无效预订</string>
+    <string name="account_tv_successful">成功预订</string>
+    <string name="account_tv_ordermanage">订单管理</string>
+    <string name="account_tv_mycollection">我的收藏</string>
+    <string name="account_tv_myqrcode">我的二维码</string>
+    <string name="account_tv_logout">注销登录</string>
+    <string name="account_tv_setting">系统设置</string>
+    <string name="account_tv_coupon">商家活动</string>
+    <string name="account_tv_birthrecord">生日记录</string>
+    <string name="account_tv_birthremind">生日提醒</string>
+    <string name="account_tv_birthinvite">生日邀请</string>
+    
+    <string name="regresh_header_pulldown">下拉刷新</string>
+    <string name="regresh_header_release">释放刷新</string>
+    <string name="refresh_header_update">更新于</string>
+    <string name="regresh_footer_pullup">上拉获取更多</string>
+    <string name="regresh_footer_release">释放获取更多</string>
+    <string name="regresh_footer_more">查看更多</string>
+    <string name="regresh_footer_loading">正在加载</string>
+    
+    <string name="listitem_store_title">板长风</string>
+    <string name="listitem_adress">[南明区]</string>
+    <string name="listitem_seat">[有座]</string>
+    <string name="listitem_store_adress">地址：</string>
+    <string name="listitem_store_phone">电话：</string>
+    
+    <string name="listitem_info_business">主营：</string>
+    <string name="listitem_info_officehour">营业时间：</string>
+    <string name="listitem_info_activity">一条优惠活动</string>
+    <string name="listitem_reserve">立即预订</string>
+    <string name="listitem_price">人均：50元   评分：</string>
+    
+    <string name="please_enter_id">请输入手机号</string>
+    <string name="please_enter_password">请输入密码</string>
+    
+    <string name="account_tv_login">账户登录</string>
+    <string name="account_tv_nickname">昵称</string>
+    <string name="account_tv_autograph">这家伙很懒，什么也没留下。</string>
+    <string name="account_tv_praisenumber">0</string>
+    
+    <string name="detail_tv_goto_album">点击查看环境照片</string>
+    <string name="detail_storeinfo">商家简介</string>
+    <string name="detail_tv_name">新怡酒店</string>
+    <string name="detail_description">4人餐，交通便利，节假日通用，美食韵味，菜品独到，环境优雅。</string>
+    <string name="detail_tv_review">用户评论</string>
+    <string name="detail_review_to_see_all">查看全部%s评论</string>
+    <string name="detail_store_address">店面详细地址</string>
+    
+    
+    <string name="register_edit_confirm">确认密码</string>
+    <string name="register_edit_password">大于或等于8个字符</string>
+    <string name="register_edit_name">最多三十个中英文字符</string>
+    <string name="register_edit_account">手机号码或邮箱</string>
+    
+    <string name="register_txt_account_left">帐</string>
+    <string name="register_txt_name_left">昵</string>
+    <string name="register_txt_password_left">密</string>
+    <string name="register_txt_confirm">确认密码：</string>
+    <string name="register_tv_submit">注册</string>
+    <string name="register_txt_account_right">号：</string>
+    <string name="register_txt_name_right">称：</string>
+    <string name="register_txt_password_right">码：</string>
+    
+    <string name="account_login_tv_userid">帐号：</string>
+    <string name="account_login_tv_password">密码：</string>
+    <string name="account_login_bt_submit">登录</string>
+    <string name="account_login_bt_register">注册</string>
+    <string name="account_login_bt_autor">自动登录</string>
+    <string name="account_login_bt_freereg">免费注册</string>
+    <string name="account_login_info">注册后预订可享受会员优惠价</string>
+    
+    <string name="feedback_et_title">输入反馈标题</string>
+    <string name="feedback_et_content">请写下您的宝贵意见或建议</string>    
+    <string name="feedback_bt_submit">提交</string>
+    
+    <string name="listview_item_store_tv_level">等级：</string>
+    <string name="listview_item_store_tv_description">关于店面的一些简短描述，奢华、品质、时尚、优雅,关于店面的一些简短描述，奢华、品质、时尚、优雅</string>
+    <string name="listview_item_store_tv_detail">查看详情</string>
+    
+    <string name="fixedpostion_curcity">当前城市-贵阳</string>
+    <string name="fixedposition_edit_hint">输入城市名称</string>
+    
+    
+    <string name="fixed_list_header_tv_citybyfixed">定位到的城市</string>
+    <string name="fixed_list_header_tv_citydone">已开发城市</string>
+    <string name="fixed_list_header_tv_cityhotting">待开发城市：联系电话 15685288999</string>
+    <string name="fixed_list_header_tv_fixing">定位失败</string>
+    <string name="fixed_list_header_bt_text">重新定位</string>
+
+    <string name="fixed_list_item_tv_letter">A</string>
+    <string name="fixed_list_item_tv_city">贵阳</string>
+    
+    <string name="location_sp_area_string">全城</string>
+    <string name="location_sp_type_string">全部</string>
+    <string name="loaction_sp_sort_string">排序</string>
+    
+    <string name="listitem_review_tv_username">评论用户</string>
+    <string name="listitem_review_tv_content">感觉好不错，真的挺好，给个好评先！</string>
+    <string name="listitem_review_tv_date">2013&#8211;8&#8211;21</string>
+
+    <string name="listitem_product_name">产品名称</string>
+    <string name="listitem_product_detail">产品的详细描述，详细说明。</string>
+    <string name="listitem_product_status">状态</string>
+    <string name="listitem_product_unit">￥</string>
+    <string name="listitem_product_money">89</string>
+    <string name="listitem_product_discard">￥100</string>
+    <string name="listitem_product_money_format">%.0f</string>
+    
+    <string name="setting_using_nopicture_mode">2G/3G下使用无图模式</string>
+    <string name="setting_clear_cache">清空缓存</string>
+    <string name="setting_title">设置</string>
+    
+    <string name="album_tv_name">图片名称</string>
+    <string name="album_tv_size">3/23</string>
+    <string name="album_tv_descrip">图片描述</string>
+    
+    
+    <string name="attention_title">关注</string>
+    <string name="attention_collect">收藏</string>
+    <string name="attention_defaultnumber">8</string>
+    <string name="attention_business_district">商圈</string>
+    <string name="attention_active">活动</string>
+    <string name="attention_birthday_record">生日记录</string>
+    <string name="attention_bir_remind">生日提醒</string>
+    <string name="attention_bir_invite">生日邀请</string>
+    <string name="attention_list_titlebar">收藏</string>
+    <string name="attentionlist_all">所有分类</string>
+    
+    <string name="layout_listview_remind">您有%d位好友将要过生日，下面是商家发来的生日邀请</string>
+    
+    <string name="attention_list_item_store_title">九号公馆</string>
+    <string name="attention_listview_item_store_state">有房</string>
+    <string name="attention_listview_item_store_sales">有一条优惠活动</string>
+    <string name="attention_listview_item_store_price">人均：128元 | 1024人成功预订</string>
+    <string name="attention_listview_item_store_address">瑞金路    瑞金北路石板坡001号</string>
+    
+    
+    <string name="listitem_birinvite_title">【贵阳等】沁园</string>
+    <string name="attention_birinvite_list_item_store_state">有商品</string>
+    <string name="listitem_birinvite_describe">特邀你加入豪华大午餐，只要10块钱</string>
+    <string name="attention_birinvite_list_item_detail">查看详情</string>
+    
+    <string name="editaccount_tv_headimg">头像</string>
+    <string name="editaccount_tv_name">姓名</string>
+    <string name="editaccount_tv_nickname">昵称</string>
+    <string name="editaccount_tv_sex">性别</string>
+    <string name="editaccount_tv_birthday">生日</string>
+    <string name="editaccount_tv_autograph">签名</string>
+    <string name="editaccount_tv_logout">注销</string>
+    <string name="editaccount_tv_phone">手机</string>
+    <string name="editaccount_tv_email">邮箱</string>
+    <string name="editaccount_tv_englishname">英文名</string>
+    <string name="editaccount_hint_autograph">在此输入个性签名</string>
+    <string name="editaccount_hint_englishname">在此输入英文名</string>
+    <string name="editaccount_hint_email">在此输入邮箱地址</string>
+    <string name="editaccount_hint_phone">在此输入手机号码</string>
+    <string name="editaccount_hint_name">在此输入姓名</string>
+    <string name="editaccount_hint_nickname">在此输入昵称</string>
+    
+    <string name="editaccount_tv_approve">已认证</string>
+    <string name="edittext_hint">在此输入内容</string>
+    
+    
+    <string name="add_bir_chooseTime">选择时间</string>
+    <string name="add_bir_chooseCity">选择城市</string>
+    <string name="add_bir_chooseArea">选择区域</string>
+
+    <string name="module_review_tv_toall">暂无评论</string>
+    <string name="module_review_tv_title">评价</string>
+    
+    <string name="module_storeinfo_telephone">联系电话：8008208820</string>
+    <string name="module_storeinfo_holiday">休假信息：各种各样节假日都不停业</string>
+    <string name="module_storeinfo_situation">营业情况：正在开业&#8230;</string>
+    <string name="module_storeinfo_surroundings">环境设施：优美、清静，免费无线网络</string>
+    <string name="module_storeinfo_address">地址信息：某区某街某某号</string>
+    <string name="module_storeinfo_businesshours">营业时间：08：00 &#8211; 18：00</string>
+    
+    
+    <string name="module_merchant_tv_title">商家信息</string>
+    <string name="module_merchant_tv_name">商家名称：随订每一天</string>
+    <string name="module_merchant_tv_company">公司名称：在途人信息科技有限公司</string>
+    <string name="module_merchant_tv_phone">电话号码：+868008208820</string>
+        
+    <string name="module_product_tv_title">商品列表</string>
+    <string name="module_product_tv_toall">查看全部</string>
+    <string name="module_storeinfo_tv_title">店面信息</string>
+    <string name="module_description_tv_title">描述信息</string>
+    
+    <string name="module_nodata_to_refresh">点击刷新</string>
+    <string name="module_nodata_to_add">点击添加</string>
+    <string name="module_nodata_nofavorite">您的收藏列表为空</string>
+    <string name="module_nodata_nobirthday">您的还没有添加任何记录</string>
+    <string name="module_nodata_noinvite">您的还没有收到任何邀请</string>
+    <string name="module_nodata_noremind">您还没有将要过生日的朋友</string>
+    <string name="module_nodata_description">抱歉，您附近没有相关数据。</string>
+    <string name="module_nodata_nofixed">定位失败，无法获取身边信息！</string>
+    <string name="module_nodata_noorder">您还没有下订单</string>
+    <string name="module_nodata_promotion">还没有商家向您推送消息</string>
+    
+    <string name="module_progress_tv_loadinfo">正在加载数据中&#8230;</string>
+    
+    <string name="reserve_item_totalprice">50元</string>
+    <string name="reserve_selector">选择菜品</string>
+    <string name="reserve_selector_status">（已点 2 个菜，共 3 份）</string>
+    <string name="reserve_selector_showall">查看全部</string>
+    
+    <string name="reserve_info_name">门庭院饭店（大厅五人桌）</string>
+    <string name="reserve_info_discount">[预订享受活动优惠 送豪华大礼包]</string>
+    <string name="reserve_info_price">50元</string>
+    <string name="reserve_info_tv_price">现价：</string>
+    
+    <string name="reserve_price">价格详情</string>
+    <string name="reserve_price_tv_total">总价格</string>
+    <string name="reserve_price_total">84元</string>
+    <string name="reserve_price_tv_privilege">总    价</string>
+    <string name="reserve_price_privilege">65.5元</string>
+    <string name="reserve_consumer">预订人信息</string>
+    <string name="reserve_consumer_tv_number">手机：</string>
+    <string name="reserve_consumer_tv_phoneback">备用：</string>
+    <string name="reserve_consumer_hint_phoneback">在此输入备用手机号码</string>
+    <string name="reserve_consumer_tv_name">姓名：</string>
+    <string name="reserve_consumer_number">15285116128</string>
+    <string name="reserve_consumer_name">杨通杰</string>
+    <string name="reserve_bt_submit">提交订单</string>
+    <string name="reserve_bt_gohome">回到主页</string>
+    <string name="reserve_setnumber">设置数量</string>
+    <string name="reserve_people_tv_number">设置人数：</string>
+    <string name="reserve_people_hint_number">输入人数</string>
+    <string name="reserve_item_name">青椒肉丝（10元）</string>
+    
+    <string name="listitem_twitter_title">商圈标题</string>
+    <string name="listitem_twitter_time">12:45</string>
+    <string name="listitem_twitter_describe">商圈内容描述，主要内容描述，相关信息等等。</string>
+
+    <string name="listitem_birthrecord_name">名称</string>
+    <string name="listitem_birthrecord_lunar">农</string>
+    <string name="listitem_birthrecord_remainday">42</string>
+    <string name="listitem_birthrecord_day">天</string>
+    <string name="listitem_birthrecord_birthday">4月2日</string>
+    
+    <string name="listitem_birthremind_name">名称</string>
+    <string name="listitem_birthremind_remainday">%d天</string>
+    <string name="listitem_birthremind_day">后生日</string>
+    
+    
+    <string name="listitem_storebase_status">状态</string>
+    <string name="listitem_storebase_title">活动店面标题</string>
+    <string name="listitem_storebase_product">产品</string>
+    <string name="listitem_storebase_coupon">预订享受活动优惠 送豪华大礼包</string>
+    <string name="listitem_storebase_address">店面详细地址某某区某某街道</string>
+    <string name="listitem_storebase_deprecated">120元</string>
+    <string name="listitem_storebase_priceunit">起</string>
+    <string name="listitem_storebase_price">88</string>
+    
+    <string name="home_tv_search">搜索</string>
+    <string name="home_tv_cityname">城市   Ｖ</string>
+    <string name="home_tv_cityname_format">%s   Ｖ</string>
+    <string name="home_keyword_hint">输入商户名，街道名</string>
+    <string name="home_item_detail_repast">酒楼/餐厅/会所</string>
+    <string name="home_item_detail_hotel">星级/品牌/商务</string>
+    <string name="home_item_detail_live">足疗/桑拿/按摩</string>
+    <string name="home_item_detail_recreate">KTV/影院/酒吧</string>
+    <string name="home_item_detail_belle">美容/美发/服装</string>
+    <string name="home_item_detail_toright">《</string>
+    
+    <string name="home_item_repast">餐饮</string>
+    <string name="home_item_hotel">酒店</string>
+    <string name="home_item_live">生活</string>
+    <string name="home_item_recreate">娱乐</string>
+    <string name="home_item_belle">美女</string>
+    
+    <string name="bitthday_source_friend">从好友列表</string>
+    <string name="bitthday_source_contact">从通讯录</string>
+    <string name="bitthday_source_straight">直接添加</string>
+    
+    <string name="addbirthday_uploadedhead">上传头像</string>
+    <string name="addbirthday_nickname">昵称</string>
+    <string name="addbirthday_nickname_hint">输入昵称</string>
+    <string name="addbirthday_sex">性别</string>
+    <string name="addbirthday_sex_hint">男</string>
+    <string name="addbirthday_phone">电话</string>
+    <string name="addbirthday_phone_hint">输入电话号码</string>
+    <string name="addbirthday_birthday">生日</string>
+    <string name="addbirthday_birthday_hint">2013&#8211;05&#8211;21</string>
+    <string name="addbirthday_lunar">农历</string>
+    <string name="addbirthday_solar">阳历</string>
+    <string name="addbirthday_tv_city">城市</string>
+    <string name="addbirthday_city_hint">输入城市</string>
+    <string name="addbirthday_area">区域</string>
+    <string name="addbirthday_area_hint">输入区域</string>
+    
+    <string name="settings_notifysound">提示声音</string>
+    <string name="settings_acceptpromotion">是否接受商家推广</string>
+    <string name="settings_chectupdate">检查更新</string>
+    <string name="settings_helptopay">支付帮助</string>
+    
+    <string name="verify_phone_btn_send">获取验证码</string>
+    <string name="verify_phone_hint_number">你的手机号</string>
+    <string name="verify_phone_txt_prompt">验证码已发送至您的手机，请及时查收，若没收到请重新获取</string>
+    <string name="verify_phone_hint_versign">请输入验证码</string>
+    <string name="verify_phone_btn_verify">验证</string>
+    <string name="verify_email_edit_mail">您的邮箱地址</string>
+    <string name="verify_email_btn_send">发送邮件</string>
+    <string name="verify_email_txt_prompt">验证邮件已发送至您的邮箱，请及时查收</string>
+    
+    <string name="order_ordered">已预订</string>
+    <string name="order_confirmed">已确定</string>
+    <string name="order_canceled">已取消</string>
+    
+    <string name="helper_question1">帐号被盗了怎么办？</string>
+    <string name="helper_question2">出现不能更新游戏怎么办?</string>
+    <string name="helper_answer2">如果您的帐号被盗，请您参考以下步骤操作：一：阿杜萨法的事发生对方答复地方，阿萨德发射点发噶发挥地方的事发生；二：撒旦发射点发生发给你咯i前往如果考虑是哪个美女</string>
+    
+    <string name="result_rb_recreation">娱乐</string>
+    <string name="result_rb_hotel">酒店</string>
+    <string name="result_rb_gourmet">餐饮</string>
+    <string name="result_rb_stall">生活</string>
+    <string name="result_rb_club">美女</string>
+    <string name="search_bt_search">搜索</string>
+    
+    <string name="listitem_order_coupon">预订享受会员价 送</string>
+    <string name="listitem_order_product">中包</string>
+    <string name="listitem_order_cancel">取消</string>
+    <string name="listitem_order_time">2013&#8211;5&#8211;1</string>
+    <string name="listitem_order_name">快乐迪量贩式KTV</string>
+    <string name="listitem_order_discounted_format">%.0f元</string>
+    <string name="listitem_order_unit">元</string>
+    <string name="listitem_order_price">660</string>
+    
+    <string name="module_coupon_icon">活</string>
+    <string name="module_coupon_name">预订受会员价</string>
+    <string name="module_coupon_count">（5条）</string>
+    <string name="module_oupon_count_format">（%d条）</string>
+    
+    <string name="detail_product_bt_order">立即预订</string>
+    <string name="detail_product_price">18</string>
+    <string name="detail_product_priceunit">元</string>
+    <string name="detail_product_price_format">%.0f元</string>
+    
+    <string name="module_product_error">加载失败,点击刷新</string>
+    <string name="module_product_nogoods">暂无商品,点击刷新</string>
+    <string name="module_product_refreshing">正在加载&#8230;</string>
+    <string name="module_product_more">查看全部</string>
+    
+    <string name="module_comment_error">加载失败,点击刷新</string>
+    <string name="module_comment_nodata">暂无评论,点击刷新</string>
+    <string name="module_comment_publish">暂无评论,我要评论</string>
+    <string name="module_comment_refreshing">正在加载&#8230;</string>
+    <string name="module_comment_more">查看全部</string>
+    
+    <string name="result_search_tv_title">如家酒店(海府路店)</string>
+    <string name="result_search_tv_state">有房</string>
+    <string name="result_search_tv_address">花溪区贵州大学北校区10栋</string>
+    <string name="result_search_tv_comment">9.5</string>
+    <string name="result_search_tv_distance">0.5km</string>
+    <string name="result_search_tv_price">188</string>
+    <string name="result_search_tv_pricestart">起</string>
+    <string name="result_search_tv_unit">￥</string>
+    
+    <string name="listitem_coupon_name">活动一：</string>
+    <string name="listitem_coupon_date">9.1&#8211;1.1</string>
+    <string name="listitem_coupon_content">[大包]预订享受活动优惠 送豪华大礼包</string>
+    
+    <string name="reserve_info_item_tv">房间</string>
+    <string name="reserve_info_item_hint">在此输入姓名</string>
+    <string name="reserve_hotel_name">姓名：</string>
+    <string name="reserve_hotel_user">联系人信息</string>
+    <string name="reserve_hotel_phone">电话：</string>
+    <string name="reserve_hotel_back">备用：</string>
+    <string name="reserve_hotel_hint_back">在此输入备用号码</string>
+    <string name="reserve_hotel_consumer">入住人信息</string>
+    <string name="reserve_hotel_number">订房数量</string>
+    <string name="reserve_hotel_product">自主大床房</string>
+    <string name="reserve_hotel_roomunit">间</string>
+    <string name="reserve_hotel_tv_number">2</string>
+    <string name="reserve_hotel_oderinfo">住店信息</string>
+    <string name="reserve_hotel_store">贵阳油榨街店</string>
+    <string name="reserve_hotel_pretotal">共住</string>
+    <string name="reserve_hotel_total">"  1  "</string>
+    <string name="reserve_hotel_suptotal">晚</string>
+    <string name="reserve_hotel_dateinfo">住店日期</string>
+    <string name="reserve_hotel_date">" 至 "</string>
+    <string name="reserve_hotel_totalprice">￥313</string>
+    <string name="reserve_hotel_next">下一步</string>
+    <string name="reserve_hotel_submit">提交订单</string>
+    <string name="reserve_hotel_orderprice">订单总价</string>
+    
+    <string name="trends_welcome_title">-随时查看、立即预订、到店支付</string>
+    <string name="trends_welcome_net">WWW.SUIDING.NET</string>
+    <string name="trends_welcome_bottom">酒店\\餐饮\\娱乐\\生活\\美女</string>
+    
+    <string name="detail_store_phone">2132424325</string>
+    <string name="detail_store_tv_comment">好评率：</string>
+    <string name="detail_store_comment">4.3</string>
+    
+    <string name="productfacility_tv_fpeople">容纳人数:</string>
+    <string name="productfacility_fpeople">8&#8211;12人</string>
+    <string name="productfacility_fpark">停车场:</string>
+    <string name="productfacility_ftoilet">包房卫生间:</string>
+    <string name="productfacility_fwifi">无线WIFI:</string>
+
+    <string name="rsrmenulist_title">产品展示</string>
+    <string name="rsrmenulistheader_headimg">图片</string>
+    <string name="rsrmenulistheader_name">菜名</string>
+    <string name="rsrmenulistheader_oldprice">原价</string>
+    <string name="rsrmenulistheader_newprice">现价</string>
+    
+    <string name="register_step_1">1 输入手机号码</string>
+    <string name="register_step_2">2 输入验证码</string>
+    <string name="register_step_3">3 设置密码</string>
+    <string name="register_step_next">" > "</string>
+    <string name="register_getcode">获取验证码</string>
+    <string name="register_hint_code">输入验证码</string>
+    <string name="register_hint_phone">输入手机号码</string>
+    <string name="register_hint_name">输入登录名</string>
+    <string name="register_hint_password">输入密码</string>
+    <string name="register_hint_confirm">确认密码</string>
+    <string name="register_setpassword">下一步</string>
+    <string name="register_submit">立即注册</string>
+    <string name="register_protocol">我已阅读并同意 随订用户协议</string>
+    
+    <string name="reserve_time_title">设置时间</string>
+    <string name="reserve_time_format">yyyy-MM-dd</string>
+    <string name="reserve_time_arrival">到店时间</string>
+    
+    <string name="listitem_twitter_order">5人已订</string>
+    
+    <string name="titlebar_search_submit">筛选</string>
+    <string name="titlebar_search_hint_keyword">输入商户名、街道名</string>
+    
+    <string name="orderinfo_base_title">订单信息</string>
+    <string name="orderinfo_base_id">订单编号</string>
+    <string name="orderinfo_base_status">订单状态</string>
+    
+    <string name="orderinfo_store_title">商家信息</string>
+    <string name="orderinfo_store_name">商家名称</string>
+    <string name="orderinfo_store_address">商家地址</string>
+    <string name="orderinfo_store_telephone">商家电话</string>
+    
+    <string name="orderinfo_user_title">用户信息</string>
+    <string name="orderinfo_user_name">联系人</string>
+    <string name="orderinfo_user_phone">联系电话</string>
+    
+    <string name="orderinfo_resturant_title">预订信息</string>
+    <string name="orderinfo_resturant_arrival">到店时间</string>
+    <string name="orderinfo_resturant_peoples">到店人数</string>
+    <string name="orderinfo_resturant_product">预订内容</string>
+    <string name="orderinfo_resturant_menu">预订产品</string>
+    
+    <string name="reservemodule_resturant_peoples">到店人数</string>
+    <string name="reservemodule_resturant_arrival">到店时间</string>
+    <string name="reservemodule_resturant_hine_peoples">在此输入到店人数</string>
+    <string name="reservemodule_resturant_hint_arrival">15:00</string>
+    
+    <string name="module_ordermenuheader_reserve">预订</string>
+    <string name="module_ordermenuheader_price">现价</string>
+    
+    <string name="module_ordermenu_title">预订产品</string>
+    <string name="module_ordermenu_nodata">暂无数据</string>
+    
+    <string name="ordermodule_selected_title">已选产品</string>
+    <string name="ordermodule_selected_summation">合 计</string>
+    <string name="ordermodule_selected_num">数量</string>
+    <string name="ordermodule_selected_price">金额</string>
+    
+	<string name="detail_comment_input">在此输入评论内容</string>
+	<string name="detail_comment_submit">评论</string>
+    
+	<string name="preorder_city">城市</string>
+	<string name="preorder_industry">行业</string>
+	<string name="preorder_industryex">小行业</string>
+	<string name="preorder_keyword">关键字</string>
+	<string name="preorder_timespan">入住时间</string>
+	<string name="perorder_timeleave">离店时间</string>
+	<string name="preorder_time">时间</string>
+	<string name="preorder_days">入住天数</string>
+    
+	<string name="presearch_city">城市</string>
+	<string name="presearch_industry">行业</string>
+	<string name="presearch_industryex">小行业</string>
+	<string name="presearch_keyword">关键字</string>
+	<string name="presearch_timespan">入住时间</string>
+	<string name="presearch_timeleave">离店时间</string>
+	
+    <!-- 以下是ShareSDK中的资源 -->
+    <string name="weibo_oauth_regiseter">应用授权</string>
+    <string name="website">http://www.shareSDK.cn</string>
+    <string name="weibo_upload_content">分享图片</string>
+    <string name="wechat_client_inavailable">目前您的微信版本过低或未安装微信，需要安装微信才能使用</string>
+    <string name="google_plus_client_inavailable">Google+ 版本过低或者没有安装，需要升级或安装Google+才能使用！</string>
+    <string name="qq_client_inavailable">QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！</string>
+    <string name="pinterest_client_inavailable">Pinterest版本过低或者没有安装，需要升级或安装Pinterest才能使用！</string>
+    
+	<string name="sinaweibo">新浪微博</string>
+	<string name="tencentweibo">腾讯微博</string>
+	<string name="qzone">QQ空间</string>
+	<string name="wechat">微信好友</string>
+	<string name="wechatmoments">微信朋友圈</string>
+	<string name="facebook">Facebook</string>
+	<string name="twitter">Twitter</string>
+	<string name="renren">人人网</string>
+	<string name="kaixin">开心网</string>
+	<string name="email">邮件</string>
+	<string name="shortmessage">信息</string>
+	<string name="sohumicroblog">搜狐微博</string>
+	<string name="sohusuishenkan">搜狐随身看</string>
+	<string name="neteasemicroblog">网易微博</string>
+	<string name="douban">豆瓣</string>
+	<string name="youdao">有道云笔记</string>
+	<string name="evernote">印象笔记</string>
+	<string name="linkedin">Linked In</string>
+	<string name="googleplus">Google+</string>
+	<string name="foursquare">FourSquare</string>
+	<string name="qq">QQ</string>
+	<string name="pinterest">Pinterest</string>
+	<string name="flickr">Flickr</string>
+	<string name="tumblr">Tumblr</string>
+	<string name="dropbox">Dropbox</string>
+	
+	<string name="cancel">取消</string>
+    <string name="finish">完成</string>
+    <string name="sharing">分享操作正在后台进行…</string>
+    <string name="share_to">分享到</string>
+	<string name="share">分享</string>
+	<string name="multi_share">图文分享</string>
+	<string name="share_completed">分享成功</string>
+	<string name="share_canceled">分享已取消</string>
+	<string name="select_one_plat_at_least">请选择一个目标平台</string>
+	<string name="list_friends">%s的朋友</string>
+	<string name="share_failed">分享失败</string>
+	
+	
+</resources>

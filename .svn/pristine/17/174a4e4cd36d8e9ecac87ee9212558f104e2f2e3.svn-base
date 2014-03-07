@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:suiding="http://schemas.android.com/apk/res/com.suiding.activity"
+    android:id="@+id/module_listview_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.suiding.widget.RefreshListView
+        android:id="@+id/module_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        suiding:cacheColorHint="@android:color/transparent"
+        suiding:divider="@drawable/line_horizontal"
+        suiding:dividerHeight="1.0px"
+        suiding:mode="both" />
+
+    <include
+        android:id="@+id/result_listview_nodata"
+        layout="@layout/module_nodata"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/result_listview_progress"
+        layout="@layout/module_progress"
+        android:visibility="gone" />
+
+</FrameLayout>

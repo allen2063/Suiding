@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_dark"
+    android:orientation="vertical" >
+
+    <include layout="@layout/module_titlebar_other" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_padding_normal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/trends_dealbg"
+                android:paddingBottom="@dimen/layout_padding_mini"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/layout_padding_mini"
+                    android:singleLine="true"
+                    android:text="@string/reserve_hotel_number"
+                    android:textColor="@color/theme_color_dark"
+                    android:textSize="@dimen/textsize_titlesmall" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/layout_padding_mini"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/reserve_hotel_product"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.0"
+                        android:paddingLeft="@dimen/layout_padding_mini"
+                        android:singleLine="true"
+                        android:text="@string/reserve_hotel_product"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="@dimen/textsize_content" />
+
+                    <TextView
+                        android:id="@+id/reserve_hotel_bt_munus"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_gravity="center_vertical"
+                        android:background="#FFCC00"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="@string/button_minus"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/reserve_hotel_tv_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="5dip"
+                        android:paddingTop="2dip"
+                        android:paddingBottom="2dip"
+                        android:gravity="center"
+                        android:text="@string/reserve_hotel_tv_number"
+                        android:textColor="@color/theme_color_dark"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dip"
+                        android:text="@string/reserve_hotel_roomunit"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="@dimen/textsize_content" />
+
+                    <TextView
+                        android:id="@+id/reserve_hotel_bt_plus"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_gravity="center_vertical"
+                        android:background="#FFCC00"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="@string/button_plus"
+                        android:textColor="@android:color/white" />
+
+                    <View
+                        android:layout_width="50dip"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_padding_normal"
+                android:paddingBottom="@dimen/layout_padding_mini"
+                android:background="@drawable/trends_dealbg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/layout_padding_mini"
+                    android:singleLine="true"
+                    android:textColor="@color/theme_color_dark"
+                    android:text="@string/reserve_hotel_consumer"
+                    android:textSize="@dimen/textsize_titlesmall" />
+
+                <LinearLayout
+                    android:id="@+id/reserve_hotel_1_stayman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <include layout="@layout/reserve_room_item" />
+
+                    <include layout="@layout/reserve_room_item" />
+                </LinearLayout>
+            </LinearLayout>
+
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/layout_padding_normal"
+				android:background="@drawable/trends_dealbg" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/layout_padding_mini"
+                    android:singleLine="true"
+                    android:textColor="@color/theme_color_dark"
+                    android:textSize="@dimen/textsize_titlesmall"
+                    android:text="@string/reserve_hotel_oderinfo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/module_padding" >
+
+                        <TextView
+                            android:id="@+id/reserve_hotel_store"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.0"
+                            android:paddingLeft="@dimen/layout_padding_mini"
+                            android:singleLine="true"
+                            android:text="@string/reserve_hotel_store"
+                        	android:textColor="@color/theme_textcolor_text"
+                            android:textSize="@dimen/textsize_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/reserve_hotel_pretotal"
+                            android:textColor="@color/theme_textcolor_text"
+                            android:textSize="@dimen/textsize_content" />
+
+                        <TextView
+                            android:id="@+id/reserve_hotel_days"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/reserve_hotel_total"
+                            android:textColor="@color/theme_color"
+                            android:textSize="@dimen/module_title_textsize" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingRight="@dimen/layout_padding_mini"
+                            android:singleLine="true"
+                            android:text="@string/reserve_hotel_suptotal"
+                            android:textColor="@color/theme_textcolor_text"
+                            android:textSize="@dimen/textsize_content" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.0px"
+                        android:background="@color/theme_gray_dark"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/module_padding" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.0"
+                            android:paddingLeft="@dimen/layout_padding_mini"
+                            android:singleLine="true"
+                            android:text="@string/reserve_hotel_dateinfo"
+                        	android:textColor="@color/theme_textcolor_text"
+                            android:textSize="@dimen/textsize_content" />
+
+                        <TextView
+                            android:id="@+id/reserve_hotel_datein"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingRight="@dimen/layout_padding_mini"
+                            android:singleLine="true"
+                            android:textColor="@color/theme_textcolor_text"
+                            android:textSize="@dimen/textsize_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingRight="@dimen/layout_padding_mini"
+                            android:singleLine="true"
+                            android:text="@string/reserve_hotel_date"
+                            android:textColor="@color/theme_textcolor_text"
+                            android:textSize="@dimen/textsize_content" />
+
+                        <TextView
+                            android:id="@+id/reserve_hotel_dateout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingRight="@dimen/layout_padding_mini"
+                            android:singleLine="true"
+                            android:textColor="@color/theme_textcolor_text"
+                            android:textSize="@dimen/textsize_content" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.0px"
+                		android:layout_marginTop="@dimen/layout_padding_mini"
+                        android:background="@color/theme_gray_dark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/reserve_hotel_products"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="@dimen/module_padding"
+                            android:layout_weight="1.0"
+                            android:paddingLeft="@dimen/layout_padding_mini"
+                            android:singleLine="true"
+                            android:text="@string/reserve_hotel_product"
+                        	android:textColor="@color/theme_textcolor_text"
+                            android:textSize="@dimen/textsize_content" />
+
+                        <TextView
+                            android:id="@+id/reserve_hotel_totalprice"
+                            android:layout_width="100dip"
+                            android:layout_height="40dip"
+                            android:background="@color/theme_color"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/reserve_hotel_totalprice"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textsize_titlesmall" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.0px"
+                        android:background="@color/theme_gray_dark"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/layout_padding_normal"
+                android:paddingBottom="@dimen/layout_padding_mini"
+				android:background="@drawable/trends_dealbg" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/layout_padding_mini"
+                    android:singleLine="true"
+                    android:textColor="@color/theme_color_dark"
+                    android:textSize="@dimen/textsize_titlesmall" 
+                    android:text="@string/reserve_hotel_user" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/module_padding" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="@dimen/layout_padding_mini"
+                            android:paddingRight="@dimen/layout_padding_normal"
+                            android:singleLine="true"
+                            android:text="@string/reserve_hotel_name"
+                        	android:textColor="@color/theme_textcolor_text"
+                            android:textSize="@dimen/textsize_content" />
+
+                        <TextView
+                            android:id="@+id/reserve_hotel_user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@null"
+                            android:paddingRight="@dimen/layout_padding_normal"
+                            android:singleLine="true"
+                            android:textColor="@color/theme_textcolor_text"
+                            android:textSize="@dimen/textsize_content" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.0px"
+                        android:background="@color/theme_gray_dark"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/module_padding" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="@dimen/layout_padding_mini"
+                            android:paddingRight="@dimen/layout_padding_normal"
+                            android:singleLine="true"
+                            android:text="@string/reserve_hotel_phone"
+                        	android:textColor="@color/theme_textcolor_text"
+                            android:textSize="@dimen/textsize_content" />
+
+                        <TextView
+                            android:id="@+id/reserve_hotel_user_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@null"
+                            android:paddingRight="@dimen/layout_padding_normal"
+                            android:singleLine="true"
+                            android:textColor="@color/theme_textcolor_text"
+                            android:textSize="@dimen/textsize_content" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.0px"
+                        android:background="@color/theme_gray_dark"
+                        android:visibility="gone"  />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/module_padding" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="@dimen/layout_padding_mini"
+                            android:paddingRight="@dimen/layout_padding_normal"
+                            android:singleLine="true"
+                            android:text="@string/reserve_hotel_back"
+                        	android:textColor="@color/theme_textcolor_text"
+                            android:textSize="@dimen/textsize_content" />
+
+                        <EditText
+                            android:id="@+id/reserve_hotel_et_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@null"
+                            android:inputType="phone"
+                            android:paddingRight="@dimen/layout_padding_normal"
+                            android:singleLine="true"
+                            android:hint="@string/reserve_hotel_hint_back"
+                            android:textColor="@color/theme_textcolor_text"
+                            android:textSize="@dimen/textsize_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/reserve_hotel_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_padding_normal"
+                android:background="@drawable/selector_button"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="@string/reserve_bt_submit"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

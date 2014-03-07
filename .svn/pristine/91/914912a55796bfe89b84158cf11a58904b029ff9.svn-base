@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_dark"
+    android:orientation="vertical" >
+
+    <include layout="@layout/module_titlebar_other" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_padding_normal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/trends_dealbg"
+                android:orientation="vertical" >
+
+                <include layout="@layout/orderinfo_module_base" />
+
+                <include layout="@layout/module_divider_selectbar" />
+
+                <include layout="@layout/orderinfo_module_store" />
+
+                <include layout="@layout/module_divider_selectbar" />
+                
+                <include layout="@layout/orderinfo_module_restaurant" />
+
+                <include layout="@layout/module_divider_selectbar" />
+
+                <include layout="@layout/orderinfo_module_user" />
+
+                <include layout="@layout/orderinfo_module_price" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/order_resturant_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_padding_normal"
+                android:background="@drawable/selector_button"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="@string/reserve_bt_gohome"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

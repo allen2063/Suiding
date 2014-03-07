@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:suiding="http://schemas.android.com/apk/res/com.suiding.activity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/trends_dealbg"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_padding_mini" >
+
+    <TextView
+        android:id="@+id/module_ordermenu_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/layout_padding_mini"
+        android:text="@string/module_ordermenu_title"
+        android:textColor="@color/theme_color_dark"
+        android:textSize="@dimen/textsize_titlesmall" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.suiding.widget.DashedLine
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            suiding:lineColor="@color/gray" />
+
+        <include layout="@layout/module_tabcontrol" />
+    </FrameLayout>
+
+    <include layout="@layout/module_ordermenu_header" />
+
+    <com.suiding.widget.DashedLine
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        suiding:lineColor="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        
+        <FrameLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/layout_padding_normal"
+                android:text="@string/module_ordermenu_nodata"
+                android:textSize="@dimen/textsize_content"
+                android:textColor="#ff2b8dab" />
+            
+	        <LinearLayout
+	            android:id="@+id/module_ordermenu_container"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@android:color/white"
+	            android:orientation="vertical"
+	            android:padding="@dimen/layout_padding_mini"
+	            android:visibility="visible" >
+	
+	            <include layout="@layout/module_ordermenu_item" />
+	
+	            <include layout="@layout/module_divider_list" />
+	
+	            <include layout="@layout/module_ordermenu_item" />
+	        </LinearLayout>
+        </FrameLayout>
+
+        <CheckBox
+            android:id="@+id/module_ordermenu_expand"
+            android:layout_width="match_parent"
+            android:layout_height="25dip"
+            android:background="@drawable/selector_background"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_expand"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/module_titlebar_main"
+        android:visibility="gone" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+
+        <android.support.v4.view.PagerTitleStrip
+            android:id="@+id/pager_title_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="#33b5e5"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:textColor="#fff"
+            android:visibility="gone" />
+    </android.support.v4.view.ViewPager>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_gravity="bottom" >
+
+        <RadioGroup
+            android:id="@+id/rg_index"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:background="#FF313131"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_home"
+                android:layout_weight="1.0"
+                android:background="@drawable/index_tab_btn_background"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/index_tab_btn_home"
+                android:paddingTop="10dip" />
+
+            <RadioButton
+                android:id="@+id/rb_location"
+                android:layout_weight="1.0"
+                android:background="@drawable/index_tab_btn_background"
+                android:button="@null"
+                android:drawableTop="@drawable/index_tab_btn_location"
+                android:paddingTop="10dip" />
+
+            <RadioButton
+                android:id="@+id/rb_attention"
+                android:layout_weight="1.0"
+                android:background="@drawable/index_tab_btn_background"
+                android:button="@null"
+                android:drawableTop="@drawable/index_tab_btn_businessarea"
+                android:paddingTop="10dip" />
+
+            <RadioButton
+                android:id="@+id/rb_account"
+                android:layout_weight="1.0"
+                android:background="@drawable/index_tab_btn_background"
+                android:button="@null"
+                android:drawableTop="@drawable/index_tab_btn_manage"
+                android:paddingTop="10dip" />
+        </RadioGroup>
+        
+        <TextView 
+            android:id="@+id/index_notifymanage"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_gravity="right|top"
+            android:layout_margin="5dip"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="@string/account_tv_praisenumber"
+            android:textColor="@android:color/white"
+            android:background="@drawable/trends_notify"/>
+        
+    </FrameLayout>
+
+</LinearLayout>

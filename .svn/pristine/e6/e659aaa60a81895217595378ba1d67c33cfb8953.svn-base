@@ -1,0 +1,321 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_dark"
+    android:orientation="vertical" >
+
+    <include layout="@layout/module_titlebar_other" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/theme_background_dark"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_padding_normal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/frame_selectbar"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/addbirthday_uploadedhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dip"
+                    android:background="@drawable/selector_background"
+                    android:padding="@dimen/layout_padding_mini" >
+
+                    <QuickContactBadge
+                        android:id="@+id/addbirthday_headimg"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image_person" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:layout_toRightOf="@+id/addbirthday_headimg"
+                        android:singleLine="true"
+                        android:text="@string/addbirthday_uploadedhead"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="@dimen/selectbar_textsize" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/icon_toright" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/frame_selectbar"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/selectbar_height"
+                    android:background="@drawable/selector_background" >
+
+                    <TextView
+                        android:id="@+id/textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginRight="25dip"
+                        android:singleLine="true"
+                        android:text="@string/addbirthday_nickname"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="@dimen/selectbar_textsize" />
+
+                    <EditText
+                        android:id="@+id/addbirthday_et_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/textview1"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/addbirthday_nickname_hint"
+                        android:singleLine="true"
+                        android:textSize="@dimen/selectbar_textsize" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@color/theme_gray_dark" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/selectbar_height"
+                    android:background="@drawable/selector_background" >
+
+                    <TextView
+                        android:id="@+id/textview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginRight="25dip"
+                        android:singleLine="true"
+                        android:text="@string/addbirthday_sex"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="@dimen/selectbar_textsize" />
+
+                    <TextView
+                        android:id="@+id/addbirthday_choosesex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/textview2"
+                        android:background="@drawable/selector_background"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/addbirthday_sex_hint"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="@dimen/selectbar_textsize" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@color/theme_gray_dark" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/selectbar_height"
+                    android:background="@drawable/selector_background" >
+
+                    <TextView
+                        android:id="@+id/textview3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginRight="25dip"
+                        android:singleLine="true"
+                        android:text="@string/addbirthday_phone"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="@dimen/selectbar_textsize" />
+
+                    <EditText
+                        android:id="@+id/addbirthday_et_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/textview3"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/addbirthday_phone_hint"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="@dimen/selectbar_textsize" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/frame_selectbar"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/selectbar_height"
+                    android:background="@drawable/selector_background" >
+
+                    <TextView
+                        android:id="@+id/textview4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginRight="20dip"
+                        android:singleLine="true"
+                        android:text="@string/addbirthday_birthday"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="@dimen/selectbar_textsize" />
+
+                    <TextView
+                        android:id="@+id/addbirthday_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/textview4"
+                        android:background="@drawable/selector_background"
+                        android:gravity="center_vertical"
+                        android:padding="5dip"
+                        android:singleLine="true"
+                        android:text="@string/addbirthday_birthday_hint"
+                        android:textSize="@dimen/selectbar_textsize" />
+
+                    <CheckBox
+                        android:id="@+id/addbirthday_cb_chooselunar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/selector_background"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/ic_check_on"
+                        android:gravity="center_vertical"
+                        android:padding="5dip"
+                        android:singleLine="true"
+                        android:text="@string/addbirthday_lunar"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="@dimen/selectbar_textsize" />
+
+                    <!--
+                         <ImageView
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/addbirthday_chooselunar"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/icon_lunar" />
+                    -->
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@color/theme_gray_dark" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/selectbar_height"
+                    android:background="@drawable/selector_background" >
+
+                    <TextView
+                        android:id="@+id/textview5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginRight="25dip"
+                        android:singleLine="true"
+                        android:text="@string/addbirthday_tv_city"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="@dimen/selectbar_textsize" />
+
+                    <EditText
+                        android:id="@+id/addbirthday_et_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/textview5"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/addbirthday_city_hint"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="@dimen/selectbar_textsize" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@color/theme_gray_dark" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/selectbar_height"
+                    android:background="@drawable/selector_background" >
+
+                    <TextView
+                        android:id="@+id/textview6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginRight="25dip"
+                        android:singleLine="true"
+                        android:text="@string/addbirthday_area"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="@dimen/selectbar_textsize" />
+
+                    <EditText
+                        android:id="@+id/addbirthday_et_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/textview6"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/addbirthday_area_hint"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="@color/theme_textcolor_text"
+                        android:textSize="@dimen/selectbar_textsize" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

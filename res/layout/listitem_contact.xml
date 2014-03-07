@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/selector_background">
+    <!-- 首字母 -->
+
+    <TextView
+        android:id="@+id/alpha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingLeft="5dip"
+        android:paddingTop="2dip"
+        android:background="@color/theme_gray"
+        android:text="@string/fixed_list_item_tv_letter"
+        android:textColor="@color/theme_textcolor_text"
+        android:textSize="15sp" >
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@+id/alpha"
+        android:background="@color/theme_gray_dark" />
+    <!-- 联系人信息 -->
+    <QuickContactBadge 
+        android:id="@+id/qcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/alpha"
+        android:layout_marginBottom="3dip"
+        android:layout_marginTop="3dip"
+        android:src="@drawable/image_person"
+        />
+    <TextView 
+        android:id="@+id/name"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5.0dip"
+        android:layout_toRightOf="@+id/qcb"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        
+        />
+    <TextView 
+        android:id="@+id/number"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_toRightOf="@+id/qcb"
+        android:layout_alignParentBottom="true"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceSmall"
+        />
+
+</RelativeLayout>

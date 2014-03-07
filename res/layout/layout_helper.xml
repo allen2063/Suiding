@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:suiding="http://schemas.android.com/apk/res/com.suiding.activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_dark"
+    android:orientation="vertical" >
+
+    <include layout="@layout/module_titlebar_other" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_padding_normal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frame_selectbar"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/helper_question1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="@dimen/layout_padding_mini"
+                    android:background="@drawable/selector_background"
+                    android:drawableRight="@drawable/icon_toright"
+                    android:gravity="center_vertical"
+                    android:text="@string/helper_question1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_content" />
+
+                <com.suiding.widget.DashedLine
+                    android:id="@+id/divider1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:visibility="gone"
+                    suiding:lineColor="@color/theme_gray_dark" />
+
+                <TextView
+                    android:id="@+id/answer_ques1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_padding_mini"
+                    android:text="@string/helper_answer2"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_padding_normal"
+                android:background="@drawable/frame_selectbar"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/helper_question2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="@dimen/layout_padding_mini"
+                    android:background="@drawable/selector_background"
+                    android:drawableRight="@drawable/icon_toright"
+                    android:gravity="center_vertical"
+                    android:text="@string/helper_question2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_content" />
+
+                <com.suiding.widget.DashedLine
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:visibility="gone"
+                    suiding:lineColor="@color/theme_gray_dark" />
+
+                <TextView
+                    android:id="@+id/helper_answer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_padding_mini"
+                    android:text="@string/helper_answer2"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

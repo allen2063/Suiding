@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/module_titlebar_other" />
+
+    <RelativeLayout
+        android:id="@+id/result_rl_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:background="@color/theme_gray" >
+
+        <RadioGroup
+            android:id="@+id/result_rg_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/result_rb_default"
+                android:layout_width="107dip"
+                android:layout_height="match_parent"
+                android:background="#0000"
+                android:button="@null"
+                android:gravity="center"
+                android:tag="rb2"
+                android:text="默认"
+                android:textColor="#000" />
+
+            <RadioButton
+                android:id="@+id/result_rb_grade"
+                android:layout_width="106dip"
+                android:layout_height="match_parent"
+                android:background="#0000"
+                android:button="@null"
+                android:gravity="center"
+                android:tag="rb4"
+                android:text="评分"
+                android:textColor="#000" />
+
+            <RadioButton
+                android:id="@+id/result_rb_price"
+                android:layout_width="107dip"
+                android:layout_height="match_parent"
+                android:background="#0000"
+                android:button="@null"
+                android:gravity="center"
+                android:tag="rb3"
+                android:text="价格"
+                android:textColor="#000" />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/result_search_iv_select"
+            android:layout_width="107dip"
+            android:layout_height="5dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/theme_color" />
+    </RelativeLayout>
+
+    <include layout="@layout/module_listview" />
+
+</LinearLayout>

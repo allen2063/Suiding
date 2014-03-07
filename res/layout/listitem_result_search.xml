@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_background_white"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_padding_mini" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <QuickContactBadge
+            android:id="@+id/result_search_iv_head"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_margin="2dip"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/result_search_tv_title"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/result_search_tv_title"
+            android:textColor="@color/theme_textcolor_text" />
+
+        <TextView
+            android:id="@+id/result_search_tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#fb1"
+            android:gravity="center"
+            android:padding="1dip"
+            android:text="@string/result_search_tv_state"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result_search_tv_descrip"
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:gravity="left"
+        android:padding="2dip"
+        android:singleLine="true"
+        android:text="@string/result_search_tv_address"
+        android:textColor="@color/theme_textcolor_text" />
+    
+    <TextView
+        android:id="@+id/result_search_tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:gravity="left"
+        android:padding="2dip"
+        android:singleLine="true"
+        android:text="@string/result_search_tv_address"
+        android:textColor="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:id="@+id/result_search_tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_gravity="bottom"
+            android:drawableLeft="@drawable/ic_people"
+            android:drawablePadding="5dip"
+            android:gravity="right|bottom"
+            android:text="@string/result_search_tv_comment"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/result_search_tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dip"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="5dip"
+            android:gravity="right|bottom"
+            android:text="@string/result_search_tv_distance"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/result_search_facility"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/about_servicephone_number"
+                android:src="@drawable/icon_wifimark" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/about_servicephone_number"
+                android:src="@drawable/icon_parkmark" />
+        </LinearLayout>
+        
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_gravity="bottom"
+            android:layout_weight="1.0"
+            android:drawablePadding="5dip"
+            android:gravity="right|bottom"
+            android:text="@string/result_search_tv_unit"
+            android:textColor="@color/theme_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/result_search_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="@string/result_search_tv_price"
+            android:textColor="@color/theme_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="right|bottom"
+            android:text="@string/result_search_tv_pricestart"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_dark"
+    android:orientation="vertical" >
+
+    <include layout="@layout/module_titlebar_other" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/layout_padding_normal"
+            android:orientation="vertical" >
+
+            <include layout="@layout/reserve_info" />
+
+            <include layout="@layout/reserve_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:visibility="gone"  />
+
+            <include layout="@layout/module_order_resturant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"/>
+            
+	        <include android:layout_marginTop="10dip" 
+	            android:layout_width="match_parent" 
+	            android:layout_height="wrap_content" 
+	            layout="@layout/module_ordermenu" />
+	        
+	        <include android:layout_marginTop="10dip" 
+	            android:layout_width="match_parent" 
+	            android:layout_height="wrap_content" 
+	            layout="@layout/module_order_sellected" />
+	        
+            <include layout="@layout/reserve_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip" />
+            
+            <include layout="@layout/reserve_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:visibility="gone" />
+
+            <include layout="@layout/reserve_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:visibility="gone" />
+
+            <include layout="@layout/reserve_consumer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip" />
+
+            <TextView
+                android:id="@+id/reserve_hotel_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/selector_button"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="@string/reserve_bt_submit"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/user_login_titlebar"
+        layout="@layout/module_titlebar_other" />
+
+    <LinearLayout
+        android:id="@+id/login_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_padding_large"
+        android:layout_marginRight="@dimen/layout_padding_large"
+        android:layout_marginTop="30dip"
+        android:background="@color/theme_gray_dark"
+        android:orientation="vertical"
+        android:padding="1dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dip"
+            android:background="@android:color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:text="@string/account_login_tv_userid"
+                android:textColor="#ff4f596a"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/login_idedit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="@android:color/transparent"
+                android:hint="@string/please_enter_id"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="10dip"
+                android:paddingLeft="3dip"
+                android:paddingTop="10dip"
+                android:textColor="#ff4f596a"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:background="@android:color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:text="@string/account_login_tv_password"
+                android:textColor="#ff4f596a"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/login_passwordedit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="@android:color/transparent"
+                android:hint="@string/please_enter_password"
+                android:inputType="textPassword"
+                android:paddingBottom="10dip"
+                android:paddingLeft="3dip"
+                android:paddingTop="10dip"
+                android:textColor="#ff4f596a"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/user_login_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/layout_padding_large"
+        android:background="@drawable/selector_button"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/account_login_bt_submit"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_padding_large"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/user_login_autor"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/selector_check"
+            android:drawablePadding="5dip"
+            android:background="@android:color/transparent"
+            android:text="@string/account_login_bt_autor"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+
+        <Button
+            android:id="@+id/user_login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableRight="@drawable/icon_toright"
+            android:text="@string/account_login_bt_freereg"
+            android:textColor="@color/theme_textcolor_text"
+            android:textSize="@dimen/textsize_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="@color/theme_gray_dark" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_padding_mini"
+        android:gravity="center_horizontal"
+        android:text="@string/account_login_info"
+        android:textColor="@color/theme_textcolor_text"
+        android:textSize="@dimen/textsize_content" />
+
+</LinearLayout>

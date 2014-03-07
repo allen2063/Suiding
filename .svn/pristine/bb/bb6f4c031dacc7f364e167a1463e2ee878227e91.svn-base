@@ -1,0 +1,369 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.suiding.activity"
+    android:versionCode="1"
+    android:versionName="1.0.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="6"
+        android:targetSdkVersion="18" />
+
+    <!-- 拨打电话权限 -->
+    <!-- <uses-permission  android:name="android.permission.CALL_PHONE" /> -->
+    <!-- 手机震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>  
+    <!-- 读取SD卡权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 手机定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 网络状态权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 读取联系人的权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 百度定位权限权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    <application
+        android:name="com.suiding.application.SuidingApp"
+        android:allowBackup="true"
+        android:icon="@drawable/suiding_logo"
+        android:label="@string/app_name"
+        android:logo="@drawable/suiding_logo"
+        android:theme="@style/AppTheme" >
+
+        <!-- 网络状态监听服务 -->
+        <receiver
+            android:name="com.suiding.broadcast.ConnectionChangeReceiver"
+            android:label="NetworkConnection" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 百度定位服务 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <activity
+            android:name="com.suiding.activity.WelcomeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.suiding.activity.WelcomeTrendsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.IndexMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.RecomendActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.ResultTabActivity"
+            android:label="@string/title_activity_result_tab"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateVisible" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.FeedBackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.UserLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.UserRegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.FixedCityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.ListCommentActivity"
+            android:label="@string/title_activity_review"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.DetailHotelActivity"
+            android:label="@string/title_activity_detail_hotel"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.DetailClubActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.DetailStallActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.DetailRestaurantActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.DetailKTVActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.AlbumActivity"
+            android:label="@string/title_activity_album"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.ListProductActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.EditAccountActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.EditTextActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.ReserveGourmetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.ReserveHotelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.ListFavoriteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.AttentionCouponActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.AttentionActivity"
+            android:label="@string/title_activity_attention"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.AttentionCollectActivity"
+            android:label="@string/title_activity_attention_list"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.TwitterActivity"
+            android:label="@string/title_activity_attention_list"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.BirthdayInviteActivity"
+            android:label="@string/title_activity_attention_list"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.BirthdayRecordActivity"
+            android:label="@string/title_activity_attention"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.BirthdayRemindActivity"
+            android:label="@string/title_activity_attention"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.BirthdaySourceActivity"
+            android:label="@string/title_activity_attention"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.PreOrderActivity"
+            android:label="@string/title_activity_attention"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.HelperActivity"
+            android:label="@string/title_activity_attention"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.MyQuickMark"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.ListContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.BirthdayAddActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="com.suiding.info_from_contact" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.suiding.activity.ResultSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.VerifyPhoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.VerifyEmailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.DetailProductActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.DetailStoreActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.ListOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.ListCouponActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.ListPdtItemActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.IndustryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.OrderInfoHotelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.OrderInfoResturantActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.BirthdayManageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.ListPromotionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.suiding.activity.PreSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" 
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+    </application>
+
+</manifest>

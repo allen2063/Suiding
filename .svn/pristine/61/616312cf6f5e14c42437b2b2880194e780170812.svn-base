@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/selector_background" >
+
+        <ImageView
+            android:id="@+id/more_hint_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/more_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/more_hint_img"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/more_detail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/more_hint_text"
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@+id/more_hint_text"
+            android:textColor="#5A5A5A"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/more_next_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:layout_marginRight="15dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/more_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fadingEdge="none"
+        android:divider="@color/theme_gray_dark"
+        android:dividerHeight="@dimen/listview_dividerheight"
+        android:cacheColorHint="@android:color/transparent"
+        android:scrollingCache="false" />
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/module_titlebar_search"/>
+
+        <include layout="@layout/module_titlebar_main" android:visibility="gone"/>
+
+        <include layout="@layout/module_filter"
+            android:background="@android:color/white"    
+            android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:baselineAligned="true"/>
+
+        <include layout="@layout/module_listview"/>
+    </LinearLayout>
+
+	<include layout="@layout/module_popuplist"/>
+
+</FrameLayout>

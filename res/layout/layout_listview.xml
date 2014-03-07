@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/module_titlebar_other" />
+
+        <include layout="@layout/module_titlebar_main" android:visibility="gone" />
+        
+        <include layout="@layout/module_filter" android:visibility="gone" />
+        
+        <TextView
+            android:id="@+id/layout_listview_remind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theme_color_dark"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/layout_listview_remind"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <include layout="@layout/module_listview" />
+    </LinearLayout>
+    
+	<include layout="@layout/module_popuplist" android:visibility="gone" />
+
+</FrameLayout>

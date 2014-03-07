@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/module_coupon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_background_module"
+    android:padding="@dimen/layout_padding_normal" >
+
+    <ImageView
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_acountbg"
+        android:visibility="gone" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dip"
+        android:paddingTop="1dip"
+        android:paddingBottom="1dip"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip"
+        android:background="@color/theme_red"
+        android:text="@string/module_coupon_icon"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/module_coupon_name"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.0"
+        android:singleLine="true"
+        android:text="@string/module_coupon_name"
+        android:textColor="@color/theme_color_dark"
+        android:textSize="@dimen/textsize_titlesmall" />
+
+    <TextView
+        android:id="@+id/store_coupon_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/module_coupon_count"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/textsize_content" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_toright" />
+
+</LinearLayout>

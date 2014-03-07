@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/module_popuplist_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#44000000"
+    android:baselineAligned="true"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/titlebar_height" >
+
+    <ListView
+        android:id="@+id/module_popuplist_type"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fiterbar_height"
+        android:layout_weight="1"
+        android:background="@color/theme_background"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/theme_gray"
+        android:dividerHeight="0dip"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none"
+        android:scrollbars="vertical"
+        android:visibility="invisible" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/module_popuplist_area"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fiterbar_height"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:background="@color/theme_background"
+        android:divider="@color/theme_gray"
+        android:dividerHeight="0dip"
+        android:fadingEdge="none"
+        android:visibility="invisible" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/module_popuplist_sort"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fiterbar_height"
+        android:layout_weight="1"
+        android:background="@color/theme_background"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/theme_gray"
+        android:dividerHeight="0dip"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none"
+        android:scrollbars="vertical"
+        android:visibility="invisible" >
+    </ListView>
+
+</LinearLayout>

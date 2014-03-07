@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/theme_background_dark" >
+
+    <include layout="@layout/module_titlebar_other" />
+
+    <ImageView
+        android:id="@+id/myqrcode_codeimage"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_selectbar"
+        android:padding="@dimen/layout_padding_normal" >
+
+        <QuickContactBadge
+            android:id="@+id/myqrcode_headimage"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginRight="@dimen/layout_padding_normal" />
+
+        <TextView
+            android:id="@+id/myqrcode_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textColor="@color/theme_textcolor_text"
+            android:layout_toRightOf="@id/myqrcode_headimage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/myqrcode_headimage"
+            android:layout_toRightOf="@+id/myqrcode_headimage"
+            android:textColor="@color/gray"
+            android:text="@string/myqrcode_detail"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
